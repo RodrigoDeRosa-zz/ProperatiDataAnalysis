@@ -82,9 +82,9 @@
 				\tab Para esto le pedimos el \code{.describe()} a nuesto DataFrame con los percentiles $0.01$ y
 				$0.99$. Esto nos permite analizar que tan desviados estan los valores máximos y mínimos. \\
 				\tab Con los percentiles recién mencionados hacemos un recorte de los datos para lograr una distribución
-				que se asemeje a una Normal lo mas posible. El primer recorte es tanto inferior ($ > 150USD$) como superior
-				($<18000USD$). Como en este nuevo DataFrame la diferencia entre el percentil $0.99$ y el máximo es de más
-				del doble, se vuelve a recortar superiormente ($<8000USD$). \\
+				que se asemeje a una Normal lo mas posible. El primer recorte es tanto inferior ($ > 150$USD) como superior
+				($<18000$USD). Como en este nuevo DataFrame la diferencia entre el percentil $0.99$ y el máximo es de más
+				del doble, se vuelve a recortar superiormente ($<8000$USD). \\
 				\tab Luego de esto, la distribución de precios es un poco mejor que antes (las diferencias entre los
 				percentiles $0.25, 0.5, 0.75$ son similares). \\
 				\tab A continuación se muestra un gráfico de distribución de precios por metro cuadrado que se obtiene
@@ -93,15 +93,15 @@
 				distribución, el histograma era solo una linea. El objetivo de este gráfico es hacer incapié en lo mencionado
 				en el previo párrafo: es necesario filtrar los datos para tener un conjunto de datos con sentido.
 				\begin{center}
-       				\includegraphics[width=6in, height=4in]{images/m2UnfilteredKDE}
+       				\includegraphics[width=6in, height=4.2in]{images/m2UnfilteredKDE}
 		   		\end{center}
 				\tab En el siguiente gráfico de distribución de precios por metro cuadrado se puede ver que la mayor parte
-				de las propiedades están concentradas en el rango de precios $[150;4000]USD$ y luego hay un drástico decaimiento
+				de las propiedades están concentradas en el rango de precios $[150;4000]$USD y luego hay un drástico decaimiento
 				de cantidad de propiedades para el resto de los precios. Si bien se podría considerar que un recorte sería
 				correcto, a partir de fuentes externas se sabe que ciertos barrios (\emph{i.e.} Puerto Madero) tienen,
-				aproximadamente, un valor medio de $6000USD$ por metro cuadrado.
+				aproximadamente, un valor medio de $6000$USD por metro cuadrado.
 				\begin{center}
-       				\includegraphics[width=6in, height=4in]{images/m2Histogram}
+       				\includegraphics[width=6in, height=4.2in]{images/m2Histogram}
 		   		\end{center}
 			\subsection{Agrupando por barrios}
 				Ahora que nuestros datos están tan completos y retocados como querríamos, procedemos a agrupar todas las propiedades
@@ -113,13 +113,13 @@
 				\tab Aquí, al igual que hicimos antes, mostraremos la distribución antes y después del filtro aplicado. Si bien
 				en escencia no son tan diferentes, podemos observar que desaparecen algunos barrios de la zona de precios altos.
 				\begin{center}
-       				\includegraphics[width=6in, height=4in]{images/m2HoodUnfilteredKDE}
+       				\includegraphics[width=6in, height=4.2in]{images/m2HoodUnfilteredKDE}
 		   		\end{center}
 				\tab Una vez que eliminamos los barrios problemáticos, si analizamos la distribución de precio por barrio
-				podemos ver que la mayor parte está concentrada en el intervalo $[500;3500]USD$, mientras que muy pocos
+				podemos ver que la mayor parte está concentrada en el intervalo $[500;3500]$USD, mientras que muy pocos
 				(solo tres) superan ese valor.
 				\begin{center}
-   	    				\includegraphics[width=6in, height=4in]{images/m2HoodHistogram}
+   	    				\includegraphics[width=6in, height=4.2in]{images/m2HoodHistogram}
 			    \end{center}	
 			    \tab Podemos ver, además, que la distribución es bastante similar a la anterior (sin agrupar por barrios) aunque,
 			    obviamente, con valores menores (pues son promedios).
@@ -141,6 +141,7 @@
 							\hline
 							\multicolumn{3}{|c|}{Top 10 [Palermo unificado]}\\
 							\hline
+							\hline
 							Puesto & Barrio & Precio $m^2$ [U$\$$D] \\
 							\hline
 							1 & Puerto Madero & 5657 \\
@@ -160,7 +161,7 @@
 					mayor al doble del precio del décimo. De todos modos, entre el segundo y el último la variación es más
 					suave. Para aportar a este análisis, se realiza un gráfico de barras:
 					\begin{center}
-   	    					\includegraphics[width=7in, height=3.5in]{images/m2UnifiedTop10}
+   	    					\includegraphics[width=6in, height=3.9in]{images/m2UnifiedTop10}
 			  		\end{center}	
 			  	\subsubsection{División de Palermo}
 			  		Aquí consideraremos que el barrio al que se nombra Palermo corresponde a todas las secciones de dicho
@@ -170,6 +171,7 @@
 						\begin{tabular}{ |c|c|c| }
 							\hline
 							\multicolumn{3}{|c|}{Top 10 [Palermo dividido]}\\
+							\hline
 							\hline
 							Puesto & Barrio & Precio $m^2$ [U$\$$D] \\
 							\hline
@@ -192,7 +194,7 @@
 					al valor de Puerto Madero. De todos modos, la diferencia entre el primero y el segundo es muy grande
 					como también lo es entre el segundo y el tercero, dejando la relación entre los valores igual de 'no suave'.
 					\begin{center}
-   	    					\includegraphics[width=7in, height=3.5in]{images/m2NotUnifiedTop10}
+   	    					\includegraphics[width=6in, height=3.9in]{images/m2NotUnifiedTop10}
 			  		\end{center}
 			  		\tab De aquí en más, utilizaremos a Palermo como un barrio unificado.
 			  	\subsubsection{Comentario sobre el Top 10}
@@ -209,6 +211,7 @@
 					\begin{tabular}{ |c|c|c| }
 						\hline
 						\multicolumn{3}{|c|}{Bottom 10}\\
+						\hline
 						\hline
 						Puesto & Barrio & Precio $m^2$ [U$\$$D] \\
 						\hline
@@ -228,34 +231,200 @@
 				\tab Si graficamos estos valores al igual que antes podremos ver un ascenso (o descenso) más suave que el del
 				\emph{Top 10}. Si bien el primero es casi la mitad de el último, la variación entre puestos es menor. \\
 				\begin{center}
-   	    				\includegraphics[width=7in, height=3.5in]{images/m2Bottom10}
+   	    				\includegraphics[width=6in, height=3.9in]{images/m2Bottom10}
 			  	\end{center}
 				\tab Aquí, remitiéndonos a la sección 3.1.3, vemos que los barrios del \emph{Bottom 10} son todos barrios
 				alejados de la ciudad, de los cuales es esperable un bajo valor del $m^2$.
-			\subsection{Barrios intermedios}
-				En esta parte nos dedicaremos a analizar la variación del precio por $m^2$ entre los barrios 'del medio'. Con
-				esto nos referimos a aquellos barrios que no están en los extremos sino que se encuentran entre el $25\%$ y el
-				$75\%$ del valor máximo. El objetivo de este análisis es ver que tan suave (o no) es la variación a medida que
-				nos alejamos del valor máximo. \\
-				\tab Simplemente mirando el gráfico de distribución de la sección 2.2, esperamos que este cambio sea suave y
-				que la mayoría de los barrios se concentren entre los $1000USD$ y los $2500USD$. \\
-				\tab Para esta parte se decidió utilizar un gráfico de area, pues el objetivo es mostrar más que nada como
-				varía el valor del $m^2$ y no nos interesa tanto cuales son los barrios que poseen esos precios. \\
-				\tab A continuación se encuentra dicho gráfico: 
+			\subsection{Dividiendo en secciones}
+				El objetivo de esta parte es determinar diferentes grupos de barrios basados en el precio promedio del $m^2$
+				para, de esta manera, analizar que tan suave (o no) es el decrecimiento del valor del $m^2$ en cada uno de
+				estos grupos. \\
+				\tab Los barrios serán divididos en grupos a partir de valores arbitrarios de precio por $m^2$, que surgen de
+				un análisis de los datos. Los grupos serán:
 				\begin{center}
-    					\includegraphics[width=7in, height=3.5in]{images/m2MiddleValues}
-		  		\end{center}
-		  		\tab  En el gráfico se aprecia lo mencionado previamente. El descenso es suave y, luego de cien barrios, 
-		  		el precio cae sólo en (aproximadamente) $750USD$. \\
-			\subsection{Análisis Global}
-				Finalmente haremos un análisis global, nuevamente con un gráfico de area, dividiendo por sectores a todos los
-				barrios. Desplazandonos desde el rojo (más caro) hasta el verde (más barato) mostramos cómo es la variación para
-				cada rango de precios, analizando así en que sector es más suave la variación.
+					\begin{tabular}{ |c|c|c| }
+						\hline
+						\multicolumn{3}{|c|}{Divisones} \\
+						\hline
+						\hline
+						Numero & min(price$m^2$) [USD] & max(price$m^2$) [USD] \\
+						\hline
+						1 & $2500$ & $\infty$ \\
+						\hline
+						2 & $2000$ & $2499$ \\
+						\hline
+						3 & $1500$ & $1999$ \\	
+						\hline
+						4 & $1200$ & $1499$ \\
+						\hline
+						5 & $950$ & $1199$ \\		
+						\hline
+						6 & $450$ & $949$ \\			
+						\hline
+					\end{tabular}
+				\end{center}
+				\tab El siguiente gráfico de área muestra el precio del $m^2$ y las divisiones (diferentes intensidades de
+				azul) indican los diferentes grupos.
 				\begin{center}
-    					\includegraphics[width=7in, height=3.5in]{images/m2GlobalVariation}
-		  		\end{center}
-				\tab Más adelante complementaremos este análisis con \emph{Heat-Maps} de CABA y GBA, con los que podremos
-				tener una mejor visualización tanto de la variación de los precios como de la ubicación de los barrios 
-				con mayores y menores precios. \\		
-
+   	    				\includegraphics[width=6in, height=3.6in]{images/m2HoodsDivision}
+			  	\end{center}
+			  	\tab Nos interesa mostrar también que porcentaje de los barrios está incluído en cada uno de estos grupos para
+			  	saber en cuál de ellos se concentra la mayor parte.
+			  	\begin{center}
+			  		\begin{tabular}{ |c|c|c| }
+						\hline
+						\multicolumn{3}{|c|}{Distribución en grupos} \\
+						\hline
+						\hline
+						Grupo & Cantidad de barrios & Porcentaje \\
+						\hline
+						1 & 16 & $9\%$ \\
+						\hline
+						2 & 28 & $16\%$ \\
+						\hline
+						3 & 48 & $27\%$ \\
+						\hline
+						4 & 45 & $26\%$ \\
+						\hline
+						5 & 23 & $13\%$ \\
+						\hline						
+						6 & 16 & $9\%$ \\
+						\hline						
+			  		\end{tabular}
+				\end{center}			  	 
+				\tab Vemos que, como se puede apreciar en el gráfico, los grupos $3$ y $4$ son los que concentran a la mayor
+				cantidad de barrios. De hecho, entre ellos dos tienen a más del $50\%$. \\
+				\tab Ahora procedermos a analizar grupo por grupo.
+				\subsubsection{Grupo 1 - $[2500:\infty)$U$\$$D}
+					En este grupo se encuentra a los dieciséis barrios más caros de CABA y GBA. Aunque a los primeros diez ya los
+					conocemos de la sección 3.1, lo que nos interesa en esta parte es analizar y comparar cómo varía el precio
+					del metro cuadrado grupo a grupo mas que los nombres propios de cada integrante de cada grupo. En cada uno
+					de los grupos se mostrará un \emph{zoom} del gráfico de área previo, para agregar una visualización al
+					análisis de la variación en cada caso. \\
+					\tab En este caso, lo que esperamos encontrar es un inicio con una pendiente muy inclinada y, a medida que
+					nos alejamos del primer barrio (que ya sabemos que es Puerto Madero), un decrecimiento de dicha pendiente,
+					pues la diferencia entre barrio y barrio será mucho menor, aunque seguirá siendo el grupo con mayor variación
+					entre barrios de todos.
+					\begin{center}
+   		    				\includegraphics[width=6in, height=3.6in]{images/m2Group1Area}
+				  	\end{center}
+				  	\tab Si bien el gráfico muestra lo que se esperaba, también se ve que a partir del doceavo barrio la curva
+				  	se vuelve casi constante (en verde), mostrando que hay un cierto subgrupo de barrios con precios muy 
+				  	similares. Esto se puede ver en el gráfico de la sección anterior si se observa el pequeño valle que 
+				  	se forma justo antes 	de llegar a la división entre el grupo 1 y el 2. \\
+				  	\tab Cabe destacar, además, que si no fuera por el precio extraordinario de Puerto Madero, el grupo tendría
+				  	una variación mucho menor, pues iría entre $3600$USD y $2500$USD lo que representaría una variación de
+				  	$1100$USD ($30\%$) entre el máximo y el mínimo mientras que, actualmente, la variación es de $3100$USD
+				  	($55\%$).
+				\subsubsection{Grupo 2 - $[2000:2500)$U$\$$D}
+					Observando el gráfico en el que se realizaron las divisiones por grupo esperamos que este segundo grupo
+					tenga un sector medio con pendiente casi nula, donde la diferencia entre el precio en un barrio y el
+					siguiente sea casi nula.
+					\begin{center}
+   		    				\includegraphics[width=6in, height=4.13in]{images/m2Group2Area}
+				  	\end{center}
+				  	\tab El sector indicado el violeta es aquel que mencionamos previamente con pendiente casi nula. En este
+				  	subgrupo se encuentran diez barrios y la diferencia entre el primero y el último es de solamente $46$USD.
+				  	Dado los numeros que se manejan, esa diferencia es casi despreciable, teniendo así un subgrupo de diez 
+				  	barrios con el mismo valor para el $m^2$. \\
+				  	\tab En cuanto al porcentaje de variación, a partir de este segundo grupo lo podemos dividir en dos; uno
+				  	particular del grupo, en donde el porcentaje se calcula a partir del máximo local, y otro general, en donde
+				  	el porcentaje se calcula a partir del máximo global (\emph{i.e.} Puerto Madero). La diferencia entre el
+				  	máximo local y el mínimo es de $422$USD, siendo, de esta manera, la variación local del $17\%$ y la general
+				  	del $7\%$. \\
+				  	\tab Vemos entonces que la diferencia de variación ya decreció en gran medida pasando del grupo 1 al grupo 2.
+				\subsubsection{Grupo 3 - $[1500:2000)$U$\$$D}
+					Ahora llegamos al primero de los dos grupos principales. Como vimos antes, este grupo concentra al $27\%$ de
+					los barrios de CABA y GBA pero (según nos muestra a grandes rasgos el gráfico general) con mayor variación
+					que el próximo grupo, que también concentra a una gran parte de los barrios.\\
+					\tab En este caso, esperamos ver una pendiente casi constante en todo el grupo sin regiones con pendiente
+					casi nula pero con una variación pequeña entre un barrio y el siguiente.
+					\begin{center}
+   		    				\includegraphics[width=6in, height=4.13in]{images/m2Group3Area}
+				  	\end{center}
+				  	\tab En este gráfico se observa lo previamente indicado, el decrecimiento es bastante lineal y no se detectan
+				  	zonas con precios constantes. De todas formas, si se amplía un poco, se pueden encontrar pares o tríos de grupos
+				  	que tienen precios similares, como se ve a continuación.
+				  	\begin{center}
+   		    				\includegraphics[width=6in, height=4.13in]{images/m2Group3Detail}
+				  	\end{center}
+				  	\tab Aquí podemos ver que si bien hay diecisiete barrios que comparten precio con algún otro, no son contiguos
+				  	como en el grupo 2. De todas maneras, como en este grupo la variación general de precio es menor y la cantidad
+				  	de barrios es mayor, podríamos encontrar también un grupo de diez barrios con variación de aproximadamente
+				  	$50$USD. Por ejemplo, entre Monte Castro y Ramos Mejía hay una diferencia de $60$USD y se encierra un subgrupo
+				  	de nueve barrios. \\
+				  	\tab Analizando el porcentaje de variación al igual que en el Grupo 2, sabiendo que la diferencia entre el
+				  	máximo local y el mínimo es de $493$USD, el porcentaje de variación local es de un $25\%$ y el porcentaje
+				  	de variación global es del $9\%$. \\
+				  	\tab Se observa entonces que, lógicamente, ahora que estamos en una zona de precios menores, una diferencia
+				  	entre mínimo y máximo similar a la del grupo anterior ahora representa una variación mayor. Por otro lado,
+				  	la variación global es apenas mayor a la del grupo anterior. De todas formas, estos porcentajes están sujetos
+				  	a la división arbitraria de los grupos hecha previamente (pues el máximo delta es $500$USD).
+				\subsubsection{Grupo 4 - $[1200:1500)$U$\$$D}
+					Este cuarto grupo es el segundo grupo principal, concentra el $26\%$ de todos los barrios y es el de menor
+					rango de valores, con $300$USD, salvo por el grupo 5, con $250$USD. Esto nos dice que la pendiente en este
+					caso será la menor de todas, como se puede ver en el gráfico general. Además, esperamos ver una zona central
+					con pendiente casi nula, en donde se encontrará un grupo muy grande de barrios con una variación en el precio
+					muy pequeña, a diferencia del grupo 3.
+					\begin{center}
+   		    				\includegraphics[width=6in, height=4.13in]{images/m2Group4Area}
+				  	\end{center}
+				  	\tab El subgrupo indicado con verde consiste de dieciocho barrios que se diferencian solamente, entre el primero
+				  	y el último, por $53$USD. Como supusimos, en este grupo se encuentra el conjunto de barrios con variación casi
+				  	nula más grande de todos. Adicionalmente, si se observa el gráfico con atención, en la mayor parte se encuentran
+				  	subgrupos pequeños con valores casi constantes hasta que hay un pequeño descenso de precio, nuevamente un valor
+				  	casi constante, etc. dividiendo el grupo en cinco o seis diferentes subgrupos pequeños (o no tanto, como el
+				  	verde) por lo que no tiene sentido destacarlos como en el grupo 3, pues solo quedarían aquellos pequeños sectores
+				  	donde la pendiente si toma valor considerable. \\
+				  	\tab En cuanto al porcentaje de variación, sabiendo que la diferencia entre el máximo local y el mínimo es de
+				  	$286$USD, tenemos un porcentaje de variación local del $19\%$ y uno global del $5\%$. Por lo tanto, y como era
+				  	de esperarse, este grupo tiene los porcentajes mínimos en ambos casos; en el local porque tiene la mayor cantidad
+				  	de segmentos casi constantes y en el global porque, además de la razón recién mencionada, por tener valores
+				  	cada vez más bajos. Cabe destacar, además, que el $19\%$ local está concentrado en ciertos 'saltos' de un
+				  	barrio a otro; pues, como mencionamos antes, la mayor parte del grupo esta compuesta por subgrupos de precios
+				  	similares.
+				\subsubsection{Grupo 5 - $[950:1200)$U$\$$D}
+					Este quinto y penúltimo grupo comienza una pendiente que incrementa progresivamente hacia el último y sexto
+					grupo. Aquí se concentra el $13\%$ de los barrios, la mitad que en el grupo anterior, y los precios de los
+					barrios ya se acercan a los minimos que se pueden encontrar.\\
+					\tab A partir de la información que brinda el gráfico general, esperamos encontrar una pequeña zona de pendiente
+					casi nula hacia el final del grupo y una variación local relativamente chica.
+					\begin{center}
+   		    				\includegraphics[width=6in, height=4.13in]{images/m2Group5Area}
+				  	\end{center}
+				  	\tab Indicado con color Cyan en el gráfico podemos ver ese pequeño grupo del que hablábamos donde la pendiente
+				  	es casi nula, mientras que en el resto del grupo hay una pendiente casi constante. El tamaño de este subgrupo
+				  	es de cinco barrios y la diferencia de precio entre el primero y el último es de $11$USD. \\
+				  	\tab Si calculamos el porcentaje de variación, conociendo que la diferencia entre el máximo local y el mínimo
+				  	es de $235$USD, obtenemos un porcentaje de variación local del $20\%$ y uno global del $4\%$. En este caso, el
+				  	porcentaje local esta distribuido a lo largo de todo el grupo, salvo por el subgrupo final que tiene un valor
+				  	casi constante.
+				\subsubsection{Grupo 6 - $[450:950)$U$\$$D}
+					En este último grupo, que contiene sólo al $9\%$ de los barrios (al igual que el grupo 1), estaremos analizando
+					a aquellos barrios con menor precio por $m^2$. A partir del gráfico general sabemos que la pendiente será muy
+					marcada y que la diferencia entre un barrio y el siguiente será importante, salvo por una pequeña parte donde
+					los precios se mantendrán casi constantes.
+					\begin{center}
+   		    				\includegraphics[width=6in, height=4.13in]{images/m2Group6Area}
+				  	\end{center}
+					\tab En amarillo se puede observar la única sección casi constante del grupo, que consta sólo de cuatro barrios
+					y que contienen un rango cuya diferencia entre el mínimo y el máximo es de $14$USD. Mientras tanto, el resto
+					del grupo tiene una pendiente considerablemente grande y la diferencia entre el valor máximo y el mínimo es casi
+					del doble. \\
+					\tab Para remarcar esto último, calcularemos el porcentaje de variación sabiendo que dicha diferencia es de
+					$410$USD. El porcentaje de variación local es del $45\%$ y el porcentaje de variación global es del $7\%$. Aquí
+					la variación local está repartida en todo el grupo pero con mayor participación de la segunda mitad, donde la
+					pendiente es mayor, y con menor participación del sector casi constante.
+		\section{Distribución geográfica}
+			En esta sección se mostrará, con la ayuda de \emph{HeatMaps} cómo están distribuídos los precios por $m^2$ en CABA
+			y GBA.
+			\subsection{Grupos característicos y su ubicación}			
+				Ahora, lo que haremos será repetir la dinámica pero dividiendo en los mismo grupos característicos de antes, para
+				ver que se puede saber de cada grupo según su ubicación.
+				\subsubsection{Grupo 1}
+				\subsubsection{Grupo 2}
+				\subsubsection{Grupo 3}
+				\subsubsection{Grupo 4}
+				\subsubsection{Grupo 5}
+				\subsubsection{Grupo 6}
 \end{document}
