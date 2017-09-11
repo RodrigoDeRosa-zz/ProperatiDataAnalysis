@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.19)  10 SEP 2017 17:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.8.19)  11 SEP 2017 17:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -763,16 +763,76 @@ File: images/m2Group6Area.png Graphic file (type png)
 <use images/m2Group6Area.png>
 Package pdftex.def Info: images/m2Group6Area.png used on input line 408.
 (pdftex.def)             Requested size: 433.62059pt x 298.48027pt.
- [12 <./images/m2Group5Area.png>] [13 <./images/m2Group6Area.png>] (./analisis.
-aux
+ [12 <./images/m2Group5Area.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 410--418
+
+ []
+
+<images/m2GeneralHeatMap.png, id=92, 978.65625pt x 401.5pt>
+File: images/m2GeneralHeatMap.png Graphic file (type png)
+
+<use images/m2GeneralHeatMap.png>
+Package pdftex.def Info: images/m2GeneralHeatMap.png used on input line 427.
+(pdftex.def)             Requested size: 433.62657pt x 177.7878pt.
+ [13 <./images/m2Group6Area.png> <./images/m2GeneralHeatMap.png>] <images/m2Gro
+up1HeatMap.png, id=98, 978.65625pt x 401.5pt>
+File: images/m2Group1HeatMap.png Graphic file (type png)
+
+<use images/m2Group1HeatMap.png>
+Package pdftex.def Info: images/m2Group1HeatMap.png used on input line 438.
+(pdftex.def)             Requested size: 433.62657pt x 177.7878pt.
+
+<images/m2Group2HeatMap.png, id=99, 978.65625pt x 401.5pt>
+File: images/m2Group2HeatMap.png Graphic file (type png)
+
+<use images/m2Group2HeatMap.png>
+Package pdftex.def Info: images/m2Group2HeatMap.png used on input line 452.
+(pdftex.def)             Requested size: 433.62657pt x 177.7878pt.
+ [14 <./images/m2Group1HeatMap.png> <./images/m2Group2HeatMap.png>]
+<images/m2Group3HeatMap.png, id=105, 978.65625pt x 401.5pt>
+File: images/m2Group3HeatMap.png Graphic file (type png)
+
+<use images/m2Group3HeatMap.png>
+Package pdftex.def Info: images/m2Group3HeatMap.png used on input line 464.
+(pdftex.def)             Requested size: 433.62657pt x 177.7878pt.
+
+<images/m2Group4HeatMap.png, id=106, 978.65625pt x 401.5pt>
+File: images/m2Group4HeatMap.png Graphic file (type png)
+
+<use images/m2Group4HeatMap.png>
+Package pdftex.def Info: images/m2Group4HeatMap.png used on input line 477.
+(pdftex.def)             Requested size: 433.62657pt x 177.7878pt.
+
+<images/m2Group5HeatMap.png, id=107, 978.65625pt x 401.5pt>
+File: images/m2Group5HeatMap.png Graphic file (type png)
+
+<use images/m2Group5HeatMap.png>
+Package pdftex.def Info: images/m2Group5HeatMap.png used on input line 486.
+(pdftex.def)             Requested size: 433.62657pt x 177.7878pt.
+ [15 <./images/m2Group3HeatMap.png> <./images/m2Group4HeatMap.png>]
+<images/m2Group6HeatMap.png, id=113, 978.65625pt x 401.5pt>
+File: images/m2Group6HeatMap.png Graphic file (type png)
+
+<use images/m2Group6HeatMap.png>
+Package pdftex.def Info: images/m2Group6HeatMap.png used on input line 495.
+(pdftex.def)             Requested size: 433.62657pt x 177.7878pt.
+
+<images/m2GroupComparison.png, id=114, 978.65625pt x 401.5pt>
+File: images/m2GroupComparison.png Graphic file (type png)
+
+<use images/m2GroupComparison.png>
+Package pdftex.def Info: images/m2GroupComparison.png used on input line 504.
+(pdftex.def)             Requested size: 433.62657pt x 177.7878pt.
+ [16 <./images/m2Group5HeatMap.png> <./images/m2Group6HeatMap.png> <./images/m2
+GroupComparison.png>] [17] (./analisis.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 ) ) 
 Here is how much of TeX's memory you used:
- 5453 strings out of 493013
- 72780 string characters out of 6135682
+ 5493 strings out of 493013
+ 73931 string characters out of 6135682
  152679 words of memory out of 5000000
- 8892 multiletter control sequences out of 15000+600000
+ 8924 multiletter control sequences out of 15000+600000
  15725 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,8n,32p,241b,384s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -788,10 +848,10 @@ ic/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 msy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on analisis.pdf (15 pages, 816462 bytes).
+Output written on analisis.pdf (19 pages, 2288365 bytes).
 PDF statistics:
- 138 PDF objects out of 1000 (max. 8388607)
- 75 compressed objects within 1 object stream
+ 167 PDF objects out of 1000 (max. 8388607)
+ 84 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 81 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 121 words of extra memory for PDF output out of 10000 (max. 10000000)
 

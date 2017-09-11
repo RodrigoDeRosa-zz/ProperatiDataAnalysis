@@ -414,17 +414,95 @@
 					\tab Para remarcar esto último, calcularemos el porcentaje de variación sabiendo que dicha diferencia es de
 					$410$USD. El porcentaje de variación local es del $45\%$ y el porcentaje de variación global es del $7\%$. Aquí
 					la variación local está repartida en todo el grupo pero con mayor participación de la segunda mitad, donde la
-					pendiente es mayor, y con menor participación del sector casi constante.
+					pendiente es mayor, y con menor participación del sector casi constante.\\
 		\section{Distribución geográfica}
 			En esta sección se mostrará, con la ayuda de \emph{HeatMaps} cómo están distribuídos los precios por $m^2$ en CABA
-			y GBA.
+			y GBA. \\
+			\tab Para empezar, mostraremos un mapa general de CABA y GBA donde la unidad de medida es el precio por $m^2$. Se
+			debe tener en cuenta que el software utilizado determina el color de un pixel a partir de la suma de todas las
+			propiedades que se corresponden con ese pixel, y por dicha razón, podríamos encontrar sectores donde, si bien el
+			precio no es tan elevado, hay muchas propiedades y por ende se las indica con rojo. De todas formas, este gráfico
+			nos sirve para tener un plano general.
+			\begin{center}
+				\includegraphics[width=6in, height=2.46in]{images/m2GeneralHeatMap}
+		  	\end{center}
 			\subsection{Grupos característicos y su ubicación}			
 				Ahora, lo que haremos será repetir la dinámica pero dividiendo en los mismo grupos característicos de antes, para
-				ver que se puede saber de cada grupo según su ubicación.
+				ver que se puede saber de cada grupo según su ubicación. Cabe destacar que la escala de precios utilizada en los
+				mapas de cada grupo es diferente, pues el objetivo aquí es mostrar la ubicación de estos barrios más que el valor
+				que ellos tienen.
 				\subsubsection{Grupo 1}
+					Para el grupo 1, como se dijo previamente, se espera encontrar a las propiedades en CABA y la zona de GBA
+					que corresponde al inmediato Norte de la Capital Federal.
+					\begin{center}
+						\includegraphics[width=6in, height=2.46in]{images/m2Group1HeatMap}
+				  	\end{center}
+				  	\tab En el gráfico se observa, más específicamente, que las propiedades con valores altos están ubicadas
+				  	en el Este de la ciudad, esparciéndose desde el Microcentro hacia el Norte de CABA. Se puede ver, también,
+				  	que las propiedades de la Provincia que se encuentran en este grupo son aquellas cercanas al río. Cabe destacar
+				  	que Puerto Madero genera una 'discontinuidad' en el mapa, pues si se observa atentamente se ve que no está en
+				  	una zona contigua al resto de los barrios. De todos modos, esto era de esperarse porque es un barrio construído
+				  	específicamente como un 'lugar caro'. \\
+				  	\tab Se debe mencionar, además, que el Barrio El Golf está ubicado en la localidad de Tigre y en este mapa no
+				  	se lo puede ver. Se decidió dejarlo afuera para poder dar una mejor vista de la Capital Federal.
 				\subsubsection{Grupo 2}
+					Este segundo grupo se espera que esté compuesto por los barrios de capital y Zona Norte que no estaban presentes
+					en el grupo previo. Esto es, San Isidro, Caballito, Saavedra, etc.
+					\begin{center}
+						\includegraphics[width=6in, height=2.46in]{images/m2Group2HeatMap}
+				  	\end{center}
+				  	\tab El gráfico nos muestra que este segundo grupo contiene a los barrios del Sur Este de la Capital Federal
+				  	('del centro para abajo', al revés que el grupo 1) y aquellos barrios que 'completan' la Zona Norte. Además, se
+				  	encuentran algunos otros barrios dispersos, como por ejemplo Boedo. \\
+				  	\tab Cabe destacar aquí también que en este segundo grupo se encuentran más barrios cerrados de la localidad de
+				  	Tigre, como el Barrio Santa Bárbara y el Barrio Los Alisos, que nuevamente no se incluyeron en el mapa para
+				  	poder dar más detalle a CABA.
 				\subsubsection{Grupo 3}
+					En este tercer grupo se espera que, además de que se cubra la mayor cantidad de superficie, se 'complete' la
+					capital y comiencen a aparecer los barrios del llamado primer cordón del conurbano.
+					\begin{center}
+						\includegraphics[width=6in, height=2.46in]{images/m2Group3HeatMap}
+				  	\end{center}
+				  	\tab El mapa presentado nos muestra, efectivamente, que está compuesto de los barrios restantes de la Capital
+				  	Federal, algunos barrios del primer cordón, como Villa Martelli, Munro, Morón y otros más lejanos como Quilmes y
+				  	Lomas de Zamora. Además, como se puede observar al Norte, se sigue completando la zona de barrios cerrados de la
+				  	localidad de Tigre y sus alrededores. \\
+				  	\tab También forma parte de este grupo la ciudad de La Plata pero se decidió dejarlo afuera de la visualización
+				  	para poder enfocarnos más en CABA y GBA.
 				\subsubsection{Grupo 4}
+					Para este cuarto grupo, el segundo grupo principal como fue llamado previamente, se espera que se 'complete' el
+					primer cordón del conurbano y comiencen a aparecer barrios del segundo y tercer cordón. También se espera que ya
+					no aparezcan barrios de CABA.
+					\begin{center}
+						\includegraphics[width=6in, height=2.46in]{images/m2Group4HeatMap}
+				  	\end{center}
+				  	\tab En este caso se debió utilizar un nivel de zoom menor por la distancia entre los barrios del grupo. De todas
+				  	maneras, se puede apreciar la aparición de más barrios del primer cordón del conurbano y de Pilar y Escobar, que
+				  	son, al igual que Tigre, dos centros importantes de barrios cerrados y country clubs.
 				\subsubsection{Grupo 5}
+					Ya acercándonos a los barrios más baratos esperamos, tanto en este grupo como en el siguiente, encontrar
+					barrios alejados de la Capital Federal pertenecientes al segundo y tercer cordón del conurbano.
+					\begin{center}
+						\includegraphics[width=6in, height=2.46in]{images/m2Group5HeatMap}
+				  	\end{center}
+				  	\tab Se puede observar que se completan algunas zonas faltantes del primer cordón del conurbano y aparecen zonas
+				  	densas del segundo y tercer cordón, como se esperaba. De todas formas, al poseer cada vez menor cantidad de
+				  	barrios, es más dificil hacer un mapa claro.
 				\subsubsection{Grupo 6}
+					Finalmente, en este sexto grupo esperamos encontrar barrios dispersos y alejados de la Capital Federal, con poca
+					cantidad de propiedades.
+					\begin{center}
+						\includegraphics[width=6in, height=2.46in]{images/m2Group6HeatMap}
+				  	\end{center}
+				  	\tab Se verifica con este gráfico, entonces, que los integrantes de este último grupo pertencen al tercer,
+				  	y más alejado, cordón del conurbano bonaerense.
+				\subsubsection{Comparación de grupos}
+					En este último gráfico mostraremos cómo se distribuyen los grupos en CABA y GBA, unificando todos los gráficos
+					previos para un mejor entendimiento. Se utilizaron diferentes colores para diferenciar los grupos y dichos
+					colores están indicados en la leyenda del gráfico.
+					\begin{center}
+						\includegraphics[width=6in, height=2.46in]{images/m2GroupComparison}
+				  	\end{center}
+				  	\tab NOTA: Grupo 1 AZUL, Grupo 2 VERDE, Grupo 3 ROJO, Grupo 4 AMARILLO, Grupo 5 CYAN, Grupo 6 MAGENTA.
+				  	\emph{AGREGARLE LA LEYENDA A LA IMAGEN}
 \end{document}
