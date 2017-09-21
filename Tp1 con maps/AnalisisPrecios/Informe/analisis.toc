@@ -1,16 +1,17 @@
 \select@language {spanish}
 \contentsline {part}{I\hspace {1em}An\IeC {\'a}lisis de la variaci\IeC {\'o}n de precio en el p\IeC {\'e}riodo 2013-2017}{1}
-\contentsline {section}{\numberline {1}An\IeC {\'a}lisis de la variaci\IeC {\'o}n de precios}{1}
-\contentsline {subsection}{\numberline {1.1}An\IeC {\'a}lisis global}{1}
-\contentsline {subsubsection}{\numberline {1.1.1}Preparaci\IeC {\'o}n y procesamiento de los datos}{1}
-\contentsline {subsubsection}{\numberline {1.1.2}Presentaci\IeC {\'o}n de los resultados}{1}
-\contentsline {subsubsection}{\numberline {1.1.3}Conclusiones}{3}
-\contentsline {subsection}{\numberline {1.2}An\IeC {\'a}lisis dependiendo del tipo de propiedad}{4}
-\contentsline {subsubsection}{\numberline {1.2.1}Preparaci\IeC {\'o}n y procesamiento de los datos}{4}
-\contentsline {subsubsection}{\numberline {1.2.2}An\IeC {\'a}lisis de la variacion de precios de las casas}{4}
-\contentsline {subsubsection}{\numberline {1.2.3}Conclusiones de la variaci\IeC {\'o}n de precios de las casas}{7}
-\contentsline {subsubsection}{\numberline {1.2.4}An\IeC {\'a}lisis de la variacion de precios de los departamentos}{7}
-\contentsline {subsubsection}{\numberline {1.2.5}Conclusiones de la variaci\IeC {\'o}n de precios de los departamentos}{9}
-\contentsline {subsubsection}{\numberline {1.2.6}An\IeC {\'a}lisis de la variacion de precios de los ph}{9}
-\contentsline {subsubsection}{\numberline {1.2.7}Conclusiones de la variaci\IeC {\'o}n de precios de los departamentos}{12}
-\contentsline {subsubsection}{\numberline {1.2.8}Conclusiones generales}{12}
+\contentsline {section}{\numberline {1}An\IeC {\'a}lisis Global}{1}
+\contentsline {subsection}{\numberline {1.1}Objetivo}{1}
+\contentsline {subsection}{\numberline {1.2}Preparaci\IeC {\'o}n y procesamiento de los datos}{1}
+\contentsline {subsection}{\numberline {1.3}Presentaci\IeC {\'o}n de los gr\IeC {\'a}ficos de promedios}{1}
+\contentsline {subsection}{\numberline {1.4}Ubicaci\IeC {\'o}n de las propiedades}{4}
+\contentsline {subsection}{\numberline {1.5}Conclusiones}{4}
+\contentsline {subsection}{\numberline {1.6}An\IeC {\'a}lisis dependiendo del tipo de propiedad}{5}
+\contentsline {subsubsection}{\numberline {1.6.1}Preparaci\IeC {\'o}n y procesamiento de los datos}{5}
+\contentsline {subsubsection}{\numberline {1.6.2}An\IeC {\'a}lisis de la variacion de precios de las casas}{5}
+\contentsline {subsubsection}{\numberline {1.6.3}Conclusiones de la variaci\IeC {\'o}n de precios de las casas}{8}
+\contentsline {subsubsection}{\numberline {1.6.4}An\IeC {\'a}lisis de la variacion de precios de los departamentos}{8}
+\contentsline {subsubsection}{\numberline {1.6.5}Conclusiones de la variaci\IeC {\'o}n de precios de los departamentos}{10}
+\contentsline {subsubsection}{\numberline {1.6.6}An\IeC {\'a}lisis de la variacion de precios de los ph}{10}
+\contentsline {subsubsection}{\numberline {1.6.7}Conclusiones de la variaci\IeC {\'o}n de precios de los departamentos}{13}
+\contentsline {subsubsection}{\numberline {1.6.8}Conclusiones generales}{13}

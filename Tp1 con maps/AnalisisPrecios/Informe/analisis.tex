@@ -44,21 +44,26 @@
 	\pagenumbering{arabic}
 	\part{Análisis de la variación de precio en el périodo 2013-2017}
 
-		\section{Análisis de la variación de precios}
+		\section{Análisis Global}
 
-      \subsection{Análisis global}
+      \subsection{Objetivo}
 
-        \tab Esta sección tiene el objetivo de analizar como fueron variando los precios de las distintas propiedades en los últimos 4 años.
-        Cabe mencionar, que dicha variación se considera sobre el precio aproximado de cada propiedad en $usd$. Ademas, como esta sección es una generalización, no se filtran los features por tipo de propiedad ni cualquier otra  característica.
+        Esta sección tiene el objetivo de analizar como fueron variando los precios de las distintas propiedades en los últimos 4 años. Con fin introductorio, se quiere brindar una mirada global acerca de la fluctuación de los precios de todas las propiedades a lo largo de los últimos 4 años.
 
-        \subsubsection{Preparación y procesamiento de los datos}
+        Dicha variación se considera sobre el precio aproximado de cada propiedad en $usd$. Cabe mencionar que el set de datos utilizado para este análisis solo contiene propiedades de \code{CABA+GBA} Ademas, como esta sección es una generalización, no se filtran los features por tipo de propiedad ni cualquier otra  característica.
 
-        Como se menciono anteriormente, esta sección no presenta filtrado por ninguna característica adicional del set de datos. Es decir, solo mantenemos el filtrado para la preparación del set de datos.\\
-        Para este primer análisis global, primero se separaron y agruparon los features por años. A continuación, para cada dataframe formado, es decir para las propiedades de un determinado año, lo que se hizo fue separarlas por meses. Entonces hasta el momento tenemos las propiedades separadas por años y por meses. Por último para cada año, se agruparon todas las propiedades de un mismo mes dejando como valor el precio en dolares promedio de las mismas.
+      \subsection{Preparación y procesamiento de los datos}
 
-        \subsubsection{Presentación de los resultados}
+        Para poder obtener una mejor visualización global de los datos, se tuvieron en cuenta algunas características sobresalientes para filtrar los datos. Como primera aproximación, se recortaron todos los features que no fueran
+        de \code{CABA+GBA}. Por otro lado, se filtraron los features a los cuales no fue posible obtener el precio. Sumado a esto, también fueron filtrados los features a los cuales no se pudo obtener la ubicación geográfica.
+        Por otra parte, cabe destacar que el análisis de la variación global que esta próximo a presentarse, fue realizado sobre el precio aproximado de cada propiedad en $usd$. Por último, al tratarse de una primera visión global, esta sección no presenta filtrado por ninguna característica adicional del set de datos.
+        \\
+        Para este el procesamiento de los datos, primero se separaron y agruparon los features por años. A continuación, para cada dataframe formado, es decir para las propiedades de un determinado año, lo que se hizo fue separarlas por meses. Entonces hasta el momento tenemos las propiedades separadas por años y por meses. Por último para cada año, se agruparon todas las propiedades de un mismo mes dejando como valor el precio en dolares promedio de las mismas.
 
-        A continuación se muestran los gráficos que representan los promedios anteriormente mencionados.
+      \subsection{Presentación de los gráficos de promedios}
+
+        Aquí se muestran los gráficos que representan los promedios anteriormente mencionados para cada año.
+        Vale aclarar que en los siguientes 5 gráficos el eje x representa los meses de cada año, y el eje y representa el precio de las propiedades en usd. Dicho precio varia entre 0$-$450000, para obtener una mirada objetiva de los gráficos que serán presentados acontinuación.
 
 				\begin{center}
        				\includegraphics[width=6in, height=4.2in]{images/variacion2013}
@@ -76,7 +81,11 @@
        				\includegraphics[width=6in, height=4.2in]{images/variacion2017}
 		   	\end{center}
 
-      \subsubsection{Conclusiones}
+      \subsection{Ubicación de las propiedades}
+
+
+
+      \subsection{Conclusiones}
 
       De los gráficos anteriormente presentados, podemos rápidamente obtener los meses con mayor y menor precio de propiedades en cada año:
 
