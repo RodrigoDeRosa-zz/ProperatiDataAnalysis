@@ -1,0 +1,6 @@
+Promedio de espacios verdes por tipo de propiedad
+
+store 		2.226510
+apartment 	2.165586
+PH 		1.336717
+house 		0.802366

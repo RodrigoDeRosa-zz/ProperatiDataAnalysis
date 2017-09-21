@@ -1,0 +1,27 @@
+TOP 10
+
+Tribunales 	7.741176
+Retiro 		7.062731
+Catalinas 	7.000000
+San Nicolás 	6.278409
+Recoleta 	5.778063
+Centro	 	5.742574
+Palermo Chico 	5.495098
+Puerto Madero 	5.492344
+Monserrat 	5.323144
+Barrio Norte 	5.195652
+
+
+
+BOTTOM 10
+ 	
+Derqui		 		0.076923
+City Bell 			0.074627
+Libertad 			0.066667
+Escobar			 	0.063020
+Barrio Cerrado "La Delfina" 	0.055556
+Estancias del Pilar	 	0.055556
+Barrio Los Lagos 		0.053571
+Grand Bourg 			0.050000
+Villa Ariza 			0.043478
+Villa Rosa 			0.032258
