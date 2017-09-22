@@ -1,0 +1,5 @@
+Stores 		15
+Houses 		35
+Apartments 	180
+PHs 		40
+
