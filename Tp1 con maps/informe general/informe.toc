@@ -1,0 +1,12 @@
+\select@language {spanish}
+\contentsline {part}{I\hspace {1em}An\IeC {\'a}lisis con Google Places}{1}
+\contentsline {section}{\numberline {1}An\IeC {\'a}lisis Instituciones Educativas}{1}
+\contentsline {subsection}{\numberline {1.1}An\IeC {\'a}lisis del Precio por Metro Cuadrado}{1}
+\contentsline {subsection}{\numberline {1.2}An\IeC {\'a}lisis de la Superficie Total de la Propiedad en Metros Cuadrados}{10}
+\contentsline {section}{\numberline {2}An\IeC {\'a}lisis de Locales Gastron\IeC {\'o}micos}{14}
+\contentsline {subsection}{\numberline {2.1}An\IeC {\'a}lisis del precio por metro cuadrado}{14}
+\contentsline {section}{\numberline {3}An\IeC {\'a}lisis de Puntos de Inter\IeC {\'e}s Cultural}{18}
+\contentsline {subsection}{\numberline {3.1}An\IeC {\'a}lisis del precio por metro cuadrado}{18}
+\contentsline {section}{\numberline {4}An\IeC {\'a}lisis de Transporte Publico}{24}
+\contentsline {subsection}{\numberline {4.1}An\IeC {\'a}lisis del precio por metro cuadrado}{24}
+\contentsline {section}{\numberline {5}Conclusiones Generales}{36}
