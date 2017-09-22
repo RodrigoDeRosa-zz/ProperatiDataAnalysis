@@ -43,3 +43,14 @@
 \contentsline {subsection}{\numberline {6.4}Ubicaci\IeC {\'o}n de las propiedades con mayor precio}{26}
 \contentsline {subsection}{\numberline {6.5}Conclusiones de la Fluctuaci\IeC {\'o}n del precio aproximado.}{29}
 \contentsline {section}{\numberline {7}Conclusiones generales}{31}
+\contentsline {part}{II\hspace {1em}An\IeC {\'a}lisis con Google Places}{31}
+\contentsline {section}{\numberline {8}An\IeC {\'a}lisis Instituciones Educativas}{31}
+\contentsline {subsection}{\numberline {8.1}An\IeC {\'a}lisis del Precio por Metro Cuadrado}{31}
+\contentsline {subsection}{\numberline {8.2}An\IeC {\'a}lisis de la Superficie Total de la Propiedad en Metros Cuadrados}{40}
+\contentsline {section}{\numberline {9}An\IeC {\'a}lisis de Locales Gastron\IeC {\'o}micos}{44}
+\contentsline {subsection}{\numberline {9.1}An\IeC {\'a}lisis del precio por metro cuadrado}{44}
+\contentsline {section}{\numberline {10}An\IeC {\'a}lisis de Puntos de Inter\IeC {\'e}s Cultural}{48}
+\contentsline {subsection}{\numberline {10.1}An\IeC {\'a}lisis del precio por metro cuadrado}{48}
+\contentsline {section}{\numberline {11}An\IeC {\'a}lisis de Transporte Publico}{54}
+\contentsline {subsection}{\numberline {11.1}An\IeC {\'a}lisis del precio por metro cuadrado}{54}
+\contentsline {section}{\numberline {12}Conclusiones Generales}{66}
