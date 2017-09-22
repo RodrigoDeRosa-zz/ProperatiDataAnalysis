@@ -1,0 +1,44 @@
+
+
+\subsection{Análisis de la variacion de precios de los ph}
+
+  \subsubsection{Presen}
+    Aqui se van a añadir los graficos de los promedios por mes de cada año para los departamentos:
+    \begin{center}
+          \includegraphics[width=6in, height=4.2in]{images/vPH2013}
+    \end{center}
+    \begin{center}
+          \includegraphics[width=6in, height=4.2in]{images/vPH2014}
+    \end{center}
+    \begin{center}
+          \includegraphics[width=6in, height=4.2in]{images/vPH2015}
+    \end{center}
+    \begin{center}
+          \includegraphics[width=6in, height=4.2in]{images/vPH2016}
+    \end{center}
+    \begin{center}
+          \includegraphics[width=6in, height=4.2in]{images/vPH2017}
+    \end{center}
+
+  \subsubsection{Conclusiones de la variación de precios de los departamentos}
+
+  Agregar conclusiones
+
+  \subsubsection{Conclusiones generales}
+
+  Agregar conclusiones.
+
+  Con motivo de representar cualitativamente la relacion entre los tipos de propiedades en los distintos años,
+  presentamos el siguiente gráfico:
+
+  \begin{center}
+        \includegraphics[width=6in, height=4.2in]{images/vTipoProp}
+  \end{center}
+
+  En el gráfico anterior se puede apreciar que las casas son las que tienen mayor precio promedio
+  a lo largo de los años, seguidas por los departamentos y luego los ph.
+  Ademas se puede apreciar que el año 2016 fue el año en donde las propiedades alcanzaron su mayor valor.
+
+  -Diferencia entre que las casas si siguen la tendencia global en los primeros 2 años y los deptos no.
+  -Las casas tienen el cambio brusco del 2015 y los deptos no.(atribuirselo a las casas)
+  -Los deptos tienen la tendencia creciente del 2016, atribuirselo a los deptos.
