@@ -49,18 +49,197 @@
 		Esto es, si son negocios, casas, PHs o departamentos.
 		\section{Tipos de propiedades y sus superficies}
 			La idea de esta sección es analizar en que lugares podemos encontrar a las propiedades con mayor y menor superficie
-			en CABA y GBA.
+			en CABA y GBA. \\
+			\tab Se debe mencionar que para realizar este análisis nos quedamos sólo con ciertos barrios en base a la cantidad de
+			propiedades de cada tipo que contienen. Este recorte se realizó de la siguiente manera:
+			\begin{center}
+				\begin{tabular}{ |c|c|c| }
+					\hline
+					\multicolumn{2}{|c|}{Recorte de barrios}\\
+					\hline
+					\hline
+					Tipo & Cantidad mínima \\
+					\hline
+					Casa & 35\\
+					Locales & 15\\
+					Departamentos & 180\\
+					PHs & 40\\
+					\hline
+				\end{tabular}
+			\end{center}
 			\subsection{¿Dónde están las propiedades más grandes según su tipo?}
 				\subsubsection{Casas}
+					En el caso de las casas, al hacer un \emph{Top 5}, obtenemos el siguiente resultado:
+					\begin{center}
+						\begin{tabular}{ |c|c|c| }
+							\hline
+							\multicolumn{3}{|c|}{Superficie promedio de las casas por barrio}\\
+							\hline
+							\hline
+							Puesto & Barrio & Superficie [$m^2$]\\
+							\hline
+							1 & Benavidez & 718 \\
+							2 & Parque Leloir & 530 \\
+							3 & Maschwitz & 499 \\
+							4 & Acassuso & 481 \\
+							5 & Belén de Escobar & 455\\
+							\hline
+						\end{tabular}
+					\end{center}
+					\tab Se puede ver que las casas en estos cinco barrios son considerablemente grandes y que el primero, Benavidez,
+					tiene un promedio mucho mayor que el segundo ($26\%$ más grande) mientras que entre los siguientes cuatro barrios
+					la diferencia es menor. A continuación, veremos un gráfico de barras de estos primeros 5 barrios.
+					\begin{center}
+   		    				\includegraphics[width=\textwidth]{images/houseSurfaceTopBar}
+				  	\end{center}
+				  	\tab En este gráfico se ve lo mencionado previamente, una considerable diferencia entre el primero y el segundo
+				  	y luego un descenso más estable. \\
+				  	\tab Finalmente, veremos cuál es la ubicación geográfica de estas casas.
+				  	\begin{center}
+   		    				\includegraphics[width=\textwidth]{images/houseSurfaceTopMap}
+				  	\end{center}
+				  	\tab Se puede ver que, como era de esperar, son todos barrios alejados de la Capital Federal, principalmente en
+				  	Zona Norte. \\
+				  	\tab Podría decirse, entonces, que las casas más grandes se encuentran en la provincia de Buenos Aires. De todos
+				  	modos, se espera encontrar barrios como Belgrano en los primeros puestos (en Belgrano R hay casas muy grandes) y,
+				  	de hecho, es el décimo puesto.
 				\subsubsection{PHs}
+					Para los PHs, el \emph{Top 5} arroja los siguientes resultados:
+					\begin{center}
+						\begin{tabular}{ |c|c|c| }
+							\hline
+							\multicolumn{3}{|c|}{Superficie promedio de los PHs por barrio}\\
+							\hline
+							\hline
+							Puesto & Barrio & Superficie [$m^2$]\\
+							\hline
+							1 & Caseros & 165\\
+							2 & San Telmo & 160.4\\
+							3 & Barracas & 159.9\\
+							4 & Almagro & 142.7 \\
+							5 & Ciudadela & 142.6\\
+							\hline
+						\end{tabular}
+					\end{center}
+					\tab En este caso vemos que la diferencia entre los primeros cinco barrios es muy pequeña, de hecho, entre el
+					segundo y tercero y entre el cuarto y el quinto, la diferencia es menor de un metro cuadrado. Si vemos esto en
+					un gráfico de barras:
+					\begin{center}
+   		    				\includegraphics[width=\textwidth]{images/phSurfaceTopBar}
+				  	\end{center}
+				  	\tab Podemos ver la pequeña diferencia de superficie entre los primeros cinco barrios. Cabe destacar que la
+				  	máxima superficie en este caso es el $23\%$ de la máxima superficie de las casas. \\
+				  	\tab En cuanto a la ubicación geográfica de estos PHs, tenemos lo siguiente:
+				  	\begin{center}
+   		    				\includegraphics[width=\textwidth]{images/phSurfaceTopMap}
+				  	\end{center}
+				  	\tab Vemos que estos PHs se encuentran en Capital Federal y en dos barrios de la Provincia muy cercanos a CABA.
+				  	Esto puede significar dos cosas; que simplemente los PHs más grandes están en la zona sur de CABA y algunos
+				  	sectores de provincia o que es más común encontrar PHs en dichos lugares y no así en otros sectores de la ciudad,
+				  	más alejados como con las casas, por lo que los primeros son los principales.
 				\subsubsection{Departamentos}
+					Para los primeros, el \emph{Top 5} es:
+					\begin{center}
+						\begin{tabular}{ |c|c|c| }
+							\hline
+							\multicolumn{3}{|c|}{Superficie promedio de los departamentos por barrio}\\
+							\hline
+							\hline
+							Puesto & Barrio & Superficie [$m^2$]\\
+							\hline
+							1 & Palermo Chico & 177 \\
+							2 & Puerto Madero & 150 \\
+							3 & Retiro & 132 \\
+							4 & Recoleta & 130\\
+							5 & Barrio El Golf & 116\\
+							\hline
+						\end{tabular}
+					\end{center}
+					\tab Cabe destacar que en este caso no se unificaron los sectores de Palermo porque se consideró importante
+					mostrar al barrio con los departamentos de mayor superficie promedio. \\
+					\tab Al ver la tabla, encontramos cuatro barrios conocidos no solo como 'caros' en la Capital Federal sino
+					también como el lugar de edificios grandes y lujosos, como es el caso de Puerto Madero y Retiro, por lo que
+					no parece extraño encontrarlos en el \emph{Top 5}. El quinto puesto lo tiene un barrio cerrado de Tigre, donde
+					también es de esperar que los departamentos sean grandes y lujosos. \\
+					\tab El gráfico de barras en este caso nos muestra un descenso más abrupto que en el caso de los PHs y las casas.
+					\begin{center}
+   		    				\includegraphics[width=\textwidth]{images/apartmentSurfaceTopBar}
+				  	\end{center}
+				  	\tab Vemos también que las superficies, en el caso de los máximos, son muy similares a las de los PHs (y por ende
+				  	mucho menores que las de las casas). \\
+				  	\tab Para la visualización de la ubicación geográfica no tuvimos en cuenta a el Barrio El Golf, pues por estar
+				  	tan alejado de Capital Federal, no permite crear un gráfico entendible y útil.
+				  	\begin{center}
+   		    				\includegraphics[width=\textwidth]{images/apartmentSurfaceTopMap}
+				  	\end{center}
+				  	\tab Vemos entonces que los departamentos con mayor superficie promedio se encuentran en aquellos barrios donde
+				  	el precio por $m^2$ promedio también es el máximo. Esto se debe, como se dijo antes, a el 'alto nivel' de la
+				  	zona, donde los edificios son lujosos y con muchos servicios y los departamentos suelen ser pisos o semi-pisos.
 				\subsubsection{Locales}
+					Finalmente, el \emph{Top 5} de los locales es el siguiente:
+					\begin{center}
+						\begin{tabular}{ |c|c|c| }
+							\hline
+							\multicolumn{3}{|c|}{Superficie promedio de los locales por barrio}\\
+							\hline
+							\hline
+							Puesto & Barrio & Superficie [$m^2$]\\
+							\hline
+							1 & Martínez & 259\\
+							2 & Caballito & 232\\
+							3 & Balvanera & 231\\
+							4 & San Telmo & 219\\
+							5 & Microcentro & 217\\
+							\hline
+						\end{tabular}
+					\end{center}
+					\tab Aquí nos encontramos con un primer puesto no esperado. Pues si bien Martínez tiene una zona comercial, no
+					se esperaba que fuera el que tiene los locales más grandes en promedio. Por otro lado, la aparición de los
+					barrios céntricos no nos sorprende, dado que allí hay un polo comercial muy importante y con locales de gran
+					superficie. De todas formas, más adelante analizaremos los barrios en los que hay mayor cantidad de locales (o
+					de cada tipo de propiedad, mejor dicho). \\
+					\tab Si vemos el gráfico de barras:
+					\begin{center}
+   		    				\includegraphics[width=\textwidth]{images/storeSurfaceTopBar}
+				  	\end{center}
+				  	\tab Vemos que la diferencia entre los primeros cinco barrios es pequeña y que, en promedio, los locales son
+				  	más grandes que los departamentos y PHs, al analizar a los cinco más grandes de cada uno. \\
+				  	\tab En cuanto a la ubicación geográfica:
+				  	\begin{center}
+   		    				\includegraphics[width=\textwidth]{images/storeSurfaceTopMap}
+				  	\end{center}
+				  	\tab Vemos que, como dijimos previamente, hay una gran cantidad en la zona céntrica de la ciudad mientras que
+				  	también aparece el barrio de Martínez en Zona Norte y Caballito en el centro-sur geográfico de CABA.
 			\subsection{¿Dónde están las propiedades más chicas según su tipo?}
 				%Bottom 5				
 				\subsubsection{Casas}
+					\begin{center}
+   		    				\includegraphics[width=\textwidth]{images/houseSurfaceBottomBar}
+				  	\end{center}
+				  	\begin{center}
+   		    				\includegraphics[width=\textwidth]{images/houseSurfaceBottomMap}
+				  	\end{center}
 				\subsubsection{PHs}
+					\begin{center}
+   		    				\includegraphics[width=\textwidth]{images/phSurfaceBottomBar}
+				  	\end{center}
+				  	\begin{center}
+   		    				\includegraphics[width=\textwidth]{images/phSurfaceBottomMap}
+				  	\end{center}
 				\subsubsection{Departamentos}
+					\begin{center}
+   		    				\includegraphics[width=\textwidth]{images/apartmentSurfaceBottomBar}
+				  	\end{center}
+				  	\begin{center}
+   		    				\includegraphics[width=\textwidth]{images/apartmentSurfaceBottomMap}
+				  	\end{center}
 				\subsubsection{Locales}
+					\begin{center}
+   		    				\includegraphics[width=\textwidth]{images/storeSurfaceBottomBar}
+				  	\end{center}
+				  	\begin{center}
+   		    				\includegraphics[width=\textwidth]{images/storeSurfaceBottomMap}
+				  	\end{center}
 		\section{Tipos de propiedades y sus precios}
 			\subsection{¿Dónde están las propiedades más caras según su tipo?}
 				%Top 5				
