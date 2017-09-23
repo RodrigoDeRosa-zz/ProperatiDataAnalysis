@@ -265,7 +265,7 @@
 						\end{tabular}
 					\end{center}
 				
-				Se puede observar en la tabla, que la diferencia entre los primeros 2 barrios es muy pequeña, pero aumenta a mas de 1000 Usd con los ultimos 3 de la tabla.
+				Se puede observar en la tabla, que la diferencia entre los primeros 2 barrios es muy pequeña, pero aumenta a mas de 1000 Usd con los últimos 3 de la tabla.
 				
 				\begin{center}
    		    				\includegraphics[width=\textwidth]{images/topCc}
@@ -525,12 +525,137 @@
 		
 		\section{Tipos de propiedades y sus ubicaciones}
 			\subsection{¿En qué lugar hay más propiedades de cada tipo?}
-				%Top 5 (heat-map)
+				En esta sección se pretende analizar, las localidades que tienen mayor cantidad de propiedades de cada tipo.\\
+				Vale aclarar que cada tipo de propiedad, fue filtrada por el siguiente rango de precios:
+				
+				\begin{center}
+						\begin{tabular}{ |c|c|c| }
+							\hline
+							\multicolumn{3}{|c|}{Rango de precios Minímo y Maxímo}\\
+							\hline
+							\hline
+							Tipo & Minímo(Usd) & Maxímo(Usd)\\
+							\hline
+							Casa & 150000 & 10000000\\
+							Departamento & 90000 &300000\\
+							Ph & 85000 & 1000000\\
+							Locales & 150000 & 10000000\\
+							\hline
+						\end{tabular}
+					\end{center}
+				Por ultimo, también se pidió un mínimo de 20 entradas.	
+			
 				\subsubsection{Casas}
+				
+				Aquí se analizara el resultado que se obtuvo a partir del \emph{TOP 5} de los barrios donde hay mas casas:
+				
+				\begin{center}
+						\begin{tabular}{ |c|c| }
+							\hline
+							\multicolumn{2}{|c|}{TOP 5 de los barrios con mas casas}\\
+							\hline
+							\hline
+							Barrio & Cantidad\\
+							\hline
+							completar tabla & no estan los datos\\
+							\hline
+						\end{tabular}
+					\end{center}
+				
+				Además se agrega un gráfico con las ubicaciones de dichas casas:
+				
+				\begin{center}
+   		    				\includegraphics[width=\textwidth]{images/ubicMasCasas}
+				\end{center}
+				
+				Como se puede observar, la ubicación de los barrios con mas casas, esta prácticamente centralizada en CABA. Lo que uno esperaba, es que se hubiese centralizado sobre GBA, por el nivel de urbanización de CABA. Se ve con los gráficos y tablas, que esta hipótesis no es correcta.
+				
 				\subsubsection{PHs}
+				
+				El objetivo de esta sección es analizar los barrios con mayor cantidad de PHs. Se vera a continuación una tabla del top 5:
+				
+				\begin{center}
+						\begin{tabular}{ |c|c| }
+							\hline
+							\multicolumn{2}{|c|}{TOP 5 de los barrios con mas PHs}\\
+							\hline
+							\hline
+							Barrio & Cantidad\\
+							\hline
+							Ramos Mejía & 176.0 \\
+							Palermo & 95.0 \\
+							Mataderos &	91.0 \\
+							Almagro & 84.0 \\
+							Villa Crespo & 79.0 \\
+							\hline
+						\end{tabular}
+					\end{center}
+				
+				Ahora se pasara a presentar un gráfico con las ubicaciones de los barrios con mayor cantidad de PHs:
+				\begin{center}
+   		    				\includegraphics[width=\textwidth]{images/ubicMPH}
+				\end{center}
+				
+				Como se puede observar, los barrios con mayor cantidades de PHs, estan divididos entre CABA y Zona Oeste.
+				
 				\subsubsection{Departamentos}
+				
+				Dicha sección se presenta con el objetivo de analizar cuales son los barrios que tienen mayor cantidad de departamentos:
+				
+				\begin{center}
+						\begin{tabular}{ |c|c| }
+							\hline
+							\multicolumn{2}{|c|}{TOP 5 de los barrios con mas Departamentos}\\
+							\hline
+							\hline
+							Barrio & Cantidad\\
+							\hline
+							Belgrano & 1534.0 \\
+							Palermo & 1440.0 \\
+							Caballito &	1402.0 \\
+							Tigre &	1232.0 \\
+							Nordelta & 979.0 \\
+							\hline
+						\end{tabular}
+					\end{center}
+				
+				A continuación se presentara un gráfico con las ubicaciones de dichos datos:
+				
+				\begin{center}
+   		    				\includegraphics[width=\textwidth]{images/ubicMDeptos}
+				\end{center}
+				
+				Como se puede ver, dicho gráfico esta centralizado en CABA y en Zona Norte, mas precisamente Tigre. La centralización que se da en CABA es totalmente esperable, por el nivel de urbanización de dichos lugares. De todas formas, uno esperaría que este todo centralizado en CABA, y como se puede ver no es de tal forma.
+				
 				\subsubsection{Locales}
-		
+				
+				Esta sección se presenta con el objetivo de hacer un análisis similar a los anteriores, para los Locales:
+				
+				\begin{center}
+						\begin{tabular}{ |c|c| }
+							\hline
+							\multicolumn{2}{|c|}{TOP 5 de los barrios con mas Departamentos}\\
+							\hline
+							\hline
+							Barrio & Cantidad\\
+							\hline
+							Palermo & 113.0 \\
+							Recoleta & 76.0 \\
+							Villa Crespo & 71.0 \\
+							Centro / Microcentro & 63.0 \\
+							San Telmo &	55.0 \\
+							\hline
+						\end{tabular}
+					\end{center}
+				
+				Ahora se presenta un gráfico con las ubicaciones:
+				
+				\begin{center}
+   		    				\includegraphics[width=\textwidth]{images/ubicMLocales}
+				\end{center}
+				
+				Como se puede observar, dicho gráfico presenta centralización en la zona de CABA.
+				Esto es totalmente esperable, ya que los locales se encuentran cerca de muchos espacios verdes, o zonas donde se concentran las redes de transporte.
 		
 		\section{Variación del precio total a través de los años}
 			\subsection{Casas}

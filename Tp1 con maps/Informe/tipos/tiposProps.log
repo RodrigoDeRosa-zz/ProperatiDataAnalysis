@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.6.22)  23 SEP 2017 13:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2017.9.23)  23 SEP 2017 19:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **tiposProps.tex
 (./tiposProps.tex
 LaTeX2e <2017/01/01> patch level 3
-Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
+Babel <3.9r> and hyphenation patterns for 35 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
@@ -895,89 +895,117 @@ Package pdftex.def Info: images/ubicLb.png used on input line 520.
 (pdftex.def)             Requested size: 496.33032pt x 202.37912pt.
 
 [17 <./images/topLb.png> <./images/ubicLb.png>]
-<images/propPrice2013.png, id=139, 897.3525pt x 496.85625pt>
+<images/ubicMasCasas.png, id=139, 984.67876pt x 401.5pt>
+File: images/ubicMasCasas.png Graphic file (type png)
+
+<use images/ubicMasCasas.png>
+Package pdftex.def Info: images/ubicMasCasas.png used on input line 568.
+(pdftex.def)             Requested size: 496.33032pt x 202.37912pt.
+
+<images/ubicMPH.png, id=140, 984.67876pt x 401.5pt>
+File: images/ubicMPH.png Graphic file (type png)
+ <use images/ubicMPH.png>
+Package pdftex.def Info: images/ubicMPH.png used on input line 596.
+(pdftex.def)             Requested size: 496.33032pt x 202.37912pt.
+
+[18 <./images/ubicMasCasas.png>]
+<images/ubicMDeptos.png, id=145, 984.67876pt x 401.5pt>
+File: images/ubicMDeptos.png Graphic file (type png)
+
+<use images/ubicMDeptos.png>
+Package pdftex.def Info: images/ubicMDeptos.png used on input line 625.
+(pdftex.def)             Requested size: 496.33032pt x 202.37912pt.
+ [19 <./images/ubicMPH.png> <./images/ubicMDeptos.png>] <images/ubicMLocales.pn
+g, id=151, 984.67876pt x 401.5pt>
+File: images/ubicMLocales.png Graphic file (type png)
+
+<use images/ubicMLocales.png>
+Package pdftex.def Info: images/ubicMLocales.png used on input line 654.
+(pdftex.def)             Requested size: 496.33032pt x 202.37912pt.
+
+<images/propPrice2013.png, id=152, 897.3525pt x 496.85625pt>
 File: images/propPrice2013.png Graphic file (type png)
 
 <use images/propPrice2013.png>
-Package pdftex.def Info: images/propPrice2013.png used on input line 552.
+Package pdftex.def Info: images/propPrice2013.png used on input line 677.
 (pdftex.def)             Requested size: 496.33032pt x 274.81079pt.
-
-<images/propPrice2014.png, id=140, 897.3525pt x 496.85625pt>
+ [20 <./images/ubicMLocales.png>]
+<images/propPrice2014.png, id=158, 897.3525pt x 496.85625pt>
 File: images/propPrice2014.png Graphic file (type png)
 
 <use images/propPrice2014.png>
-Package pdftex.def Info: images/propPrice2014.png used on input line 558.
+Package pdftex.def Info: images/propPrice2014.png used on input line 683.
 (pdftex.def)             Requested size: 496.33032pt x 274.81079pt.
- [18 <./images/propPrice2013.png>]
-<images/propPrice2015.png, id=146, 897.3525pt x 496.85625pt>
+
+<images/propPrice2015.png, id=159, 897.3525pt x 496.85625pt>
 File: images/propPrice2015.png Graphic file (type png)
 
 <use images/propPrice2015.png>
-Package pdftex.def Info: images/propPrice2015.png used on input line 563.
+Package pdftex.def Info: images/propPrice2015.png used on input line 688.
 (pdftex.def)             Requested size: 496.33032pt x 274.81079pt.
-
-<images/propPrice2016.png, id=147, 897.3525pt x 496.85625pt>
+ [21 <./images/propPrice2013.png> <./images/propPrice2014.png>] <images/propPri
+ce2016.png, id=165, 897.3525pt x 496.85625pt>
 File: images/propPrice2016.png Graphic file (type png)
 
 <use images/propPrice2016.png>
-Package pdftex.def Info: images/propPrice2016.png used on input line 569.
+Package pdftex.def Info: images/propPrice2016.png used on input line 694.
 (pdftex.def)             Requested size: 496.33032pt x 274.81079pt.
- [19 <./images/propPrice2014.png> <./images/propPrice2015.png>] <images/propPri
-ce2017.png, id=153, 897.3525pt x 496.85625pt>
+
+<images/propPrice2017.png, id=166, 897.3525pt x 496.85625pt>
 File: images/propPrice2017.png Graphic file (type png)
 
 <use images/propPrice2017.png>
-Package pdftex.def Info: images/propPrice2017.png used on input line 575.
+Package pdftex.def Info: images/propPrice2017.png used on input line 700.
 (pdftex.def)             Requested size: 496.33032pt x 274.81079pt.
-
-<images/houseVariation.png, id=154, 909.3975pt x 496.85625pt>
+ [22 <./images/propPrice2015.png> <./images/propPrice2016.png>] <images/houseVa
+riation.png, id=172, 909.3975pt x 496.85625pt>
 File: images/houseVariation.png Graphic file (type png)
 
 <use images/houseVariation.png>
-Package pdftex.def Info: images/houseVariation.png used on input line 581.
+Package pdftex.def Info: images/houseVariation.png used on input line 706.
 (pdftex.def)             Requested size: 496.33032pt x 271.1793pt.
- [20 <./images/propPrice2016.png> <./images/propPrice2017.png>] <images/phVaria
-tion.png, id=160, 909.3975pt x 496.85625pt>
+
+<images/phVariation.png, id=173, 909.3975pt x 496.85625pt>
 File: images/phVariation.png Graphic file (type png)
 
 <use images/phVariation.png>
-Package pdftex.def Info: images/phVariation.png used on input line 588.
+Package pdftex.def Info: images/phVariation.png used on input line 713.
 (pdftex.def)             Requested size: 496.33032pt x 271.1793pt.
-
-<images/apartmentsVariation.png, id=161, 909.3975pt x 496.85625pt>
+ [23 <./images/propPrice2017.png> <./images/houseVariation.png>]
+<images/apartmentsVariation.png, id=180, 909.3975pt x 496.85625pt>
 File: images/apartmentsVariation.png Graphic file (type png)
 
 <use images/apartmentsVariation.png>
-Package pdftex.def Info: images/apartmentsVariation.png used on input line 594.
+Package pdftex.def Info: images/apartmentsVariation.png used on input line 719.
 
 (pdftex.def)             Requested size: 496.33032pt x 271.1793pt.
- [21 <./images/houseVariation.png> <./images/phVariation.png>]
-<images/storeVariation.png, id=167, 909.3975pt x 496.85625pt>
+
+<images/storeVariation.png, id=181, 909.3975pt x 496.85625pt>
 File: images/storeVariation.png Graphic file (type png)
 
 <use images/storeVariation.png>
-Package pdftex.def Info: images/storeVariation.png used on input line 605.
+Package pdftex.def Info: images/storeVariation.png used on input line 730.
 (pdftex.def)             Requested size: 496.33032pt x 271.1793pt.
-
-<images/jointVariation.png, id=168, 936.49875pt x 493.845pt>
+ [24 <./images/phVariation.png> <./images/apartmentsVariation.png>]
+<images/jointVariation.png, id=187, 936.49875pt x 493.845pt>
 File: images/jointVariation.png Graphic file (type png)
 
 <use images/jointVariation.png>
-Package pdftex.def Info: images/jointVariation.png used on input line 610.
+Package pdftex.def Info: images/jointVariation.png used on input line 735.
 (pdftex.def)             Requested size: 496.33032pt x 261.73659pt.
- [22 <./images/apartmentsVariation.png> <./images/storeVariation.png>] [23 <./i
-mages/jointVariation.png>] (./tiposProps.aux
+ [25 <./images/storeVariation.png> <./images/jointVariation.png>] (./tiposProps
+.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 ) ) 
 Here is how much of TeX's memory you used:
- 5844 strings out of 493013
- 79778 string characters out of 6135682
- 158835 words of memory out of 5000000
- 9255 multiletter control sequences out of 15000+600000
+ 5864 strings out of 494261
+ 80256 string characters out of 6161795
+ 155635 words of memory out of 5000000
+ 9072 multiletter control sequences out of 15000+600000
  9832 words of font info for 38 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 39i,7n,32p,339b,384s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 398 hyphenation exceptions out of 8191
+ 39i,7n,32p,350b,384s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/te
@@ -988,10 +1016,10 @@ nts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmtt10.pfb>
-Output written on tiposProps.pdf (25 pages, 4114423 bytes).
+Output written on tiposProps.pdf (27 pages, 5014605 bytes).
 PDF statistics:
- 212 PDF objects out of 1000 (max. 8388607)
- 88 compressed objects within 1 object stream
+ 226 PDF objects out of 1000 (max. 8388607)
+ 92 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 216 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 236 words of extra memory for PDF output out of 10000 (max. 10000000)
 
