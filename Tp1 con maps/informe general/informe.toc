@@ -1,16 +1,23 @@
 \select@language {spanish}
-\contentsline {part}{I\hspace {1em}An\IeC {\'a}lisis con Recolecci\IeC {\'o}n de datos v\IeC {\'\i }a URLs de Properati}{1}
-\contentsline {section}{\numberline {1}Recolecci\IeC {\'o}n de Datos v\IeC {\'\i }a URLs}{1}
-\contentsline {section}{\numberline {2}An\IeC {\'a}lisis de Cuartos por Propiedad}{1}
+\contentsline {part}{I\hspace {1em}An\IeC {\'a}lisis de la relaci\IeC {\'o}n de las caracter\IeC {\'\i }sticas de las propiedades con el precio/superficie}{1}
+\contentsline {section}{\numberline {1}Preparaci\IeC {\'o}n y Recolecci\IeC {\'o}n de Datos v\IeC {\'\i }a URLs}{1}
+\contentsline {section}{\numberline {2}An\IeC {\'a}lisis de Cuartos por Propiedad}{2}
+\contentsline {subsection}{\numberline {2.1}Relaci\IeC {\'o}n entre cantidad de habitaciones y el precio}{2}
+\contentsline {subsection}{\numberline {2.2}Relaci\IeC {\'o}n entre cantidad de habitaciones y la superficie}{2}
+\contentsline {subsection}{\numberline {2.3}Conclusiones}{3}
 \contentsline {section}{\numberline {3}An\IeC {\'a}lisis de Ambientes por Propiedad}{3}
+\contentsline {subsection}{\numberline {3.1}Relaci\IeC {\'o}n entre los ambientes y el precio}{3}
+\contentsline {subsection}{\numberline {3.2}Relaci\IeC {\'o}n entre los ambientes y la superficie}{4}
+\contentsline {subsection}{\numberline {3.3}Conclusiones}{5}
+\contentsline {section}{\numberline {4} Conclusiones generales }{5}
 \contentsline {part}{II\hspace {1em}An\IeC {\'a}lisis con Google Places}{5}
-\contentsline {section}{\numberline {4}An\IeC {\'a}lisis Instituciones Educativas}{5}
-\contentsline {subsection}{\numberline {4.1}An\IeC {\'a}lisis del Precio por Metro Cuadrado}{5}
-\contentsline {subsection}{\numberline {4.2}An\IeC {\'a}lisis de la Superficie Total de la Propiedad en Metros Cuadrados}{14}
-\contentsline {section}{\numberline {5}An\IeC {\'a}lisis de Locales Gastron\IeC {\'o}micos}{18}
-\contentsline {subsection}{\numberline {5.1}An\IeC {\'a}lisis del precio por metro cuadrado}{18}
-\contentsline {section}{\numberline {6}An\IeC {\'a}lisis de Puntos de Inter\IeC {\'e}s Cultural}{22}
-\contentsline {subsection}{\numberline {6.1}An\IeC {\'a}lisis del precio por metro cuadrado}{22}
-\contentsline {section}{\numberline {7}An\IeC {\'a}lisis de Transporte Publico}{28}
-\contentsline {subsection}{\numberline {7.1}An\IeC {\'a}lisis del precio por metro cuadrado}{28}
-\contentsline {section}{\numberline {8}Conclusiones Generales}{40}
+\contentsline {section}{\numberline {5}An\IeC {\'a}lisis Instituciones Educativas}{6}
+\contentsline {subsection}{\numberline {5.1}An\IeC {\'a}lisis del Precio por Metro Cuadrado}{6}
+\contentsline {subsection}{\numberline {5.2}An\IeC {\'a}lisis de la Superficie Total de la Propiedad en Metros Cuadrados}{15}
+\contentsline {section}{\numberline {6}An\IeC {\'a}lisis de Locales Gastron\IeC {\'o}micos}{19}
+\contentsline {subsection}{\numberline {6.1}An\IeC {\'a}lisis del precio por metro cuadrado}{19}
+\contentsline {section}{\numberline {7}An\IeC {\'a}lisis de Puntos de Inter\IeC {\'e}s Cultural}{23}
+\contentsline {subsection}{\numberline {7.1}An\IeC {\'a}lisis del precio por metro cuadrado}{23}
+\contentsline {section}{\numberline {8}An\IeC {\'a}lisis de Transporte Publico}{29}
+\contentsline {subsection}{\numberline {8.1}An\IeC {\'a}lisis del precio por metro cuadrado}{29}
+\contentsline {section}{\numberline {9}Conclusiones Generales}{41}

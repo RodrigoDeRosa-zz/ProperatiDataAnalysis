@@ -52,54 +52,117 @@
     \newpage
 	\pagenumbering{arabic}
 	
-	\part{Análisis con Recolección de datos vía URLs de Properati}
+	\part{Análisis de la relación de las características de las propiedades con el precio/superficie}
 	
-		Insertar breve intro
+		El capitulo a presentarse a continuación, tiene el objetivo de analizar las relaciones posibles entre las distintas características de una propiedad, como por ejemplo habitaciones o ambientes, con el precio o superficie de dicha propiedad.
 		
-		\section{Recolección de Datos vía URLs}
+		\section{Preparación y Recolección de Datos vía URLs}
 		
-			Como se obtuvieron los datos
+			El set de datos utilizado en primera instancia fue filtrado por las propiedades que no se pudo conseguir:
+		
+		\begin{itemize}
+		\item \emph{Precio Aproximado en usd}
+			
+		\item \emph{Precio por m$^2$ y superficie cubierta}
+
+		\item \emph{La latitud y longitud} 
+			
+		\item \emph{Geonames} 
+			
+		\end{itemize}
+		
+		Luego de realizar este filtrado, lo primero que se hizo fue parsear las descripciones y títulos que aparecían en el set de datos. Aquí apareció el primer problema, ya que dichas descripciones/títulos estaban escritos por las personas que realizaban la publicación, por lo tanto no se poseía una entrada estandarizada, sino que una palabra a buscar podía estar escrita de muchas formas distintas. Por ejemplo, si se quería obtener la cantidad de ambientes de una propiedad, podía encontrarse como:
+			\begin{itemize}
+				\item \emph{Ambientes}
+				\item \emph{Ambiente}
+				\item \emph{Ambientes:}
+				\item \emph{Amb}
+				\item \emph{Amb.} 
+			\end{itemize}
+		Cabe aclarar, que solamente se mencionan algunas posibilidades con fines ilustrativos. Por otra parte, además de la falta de estandarización que se tenia en las descripciones/títulos, también se tenia el problema del orden en el que se encontraba la información, y su formato. Es decir, la información que se quería encontrar podía aparecer en distintos formatos y distinto orden. Por ejemplo, para la cantidad de ambientes se podía encontrar: 
+			\begin{itemize}
+				\item \emph{Amb: 2}
+				\item \emph{Amb: dos}
+				\item \emph{2 Ambientes}
+				\item \emph{dos amb}
+				\item \emph{dos ambientes} 
+			\end{itemize}
+		Nuevamente solamente se mencionan algunas combinaciones con fines ilustrativos. En definitiva, si se tiene en cuenta los dos problemas anteriores, se vuelve muy tedioso tener que considerar las distintas combinaciones. Por último y no por eso menos importante, aparecía los errores de tipeo de la persona que había subido la publicación. De todas formas, se parsearon las descripciones y títulos de una manera no tan exhaustiva en búsqueda de cantidad de ambientes y cuartos, con el fin de completar lo mas posible el set de datos.
+		\\
+		Por otro lado, con el objetivo de obtener una entrada mas estandarizada, se noto que en el set de datos aparecían los links URL de las publicaciones. En dichas publicaciones la entrada era totalmente estandarizada. Siguiendo con el ejemplo de ambientes, se podía obtener como \emph{Ambientes: n }, siendo n la cantidad de ambientes. Entonces se opto por intentar obtener la información de las paginas web. De todas formas, aquí se presentaron 3 problemas: el primero es que obtener la información desde la pagina web era muy lento, el segundo fue que había publicaciones que habían sido quitadas porque ya se había realizado la venta y por último es que la pagina web podía no contener la información que se buscaba. Igualmente se prefirió lidiar con estos dos problemas, antes que la falta de estandarización de las descripciones.
+		\\
+		Teniendo en cuenta los problemas mencionados anteriormente, para llevar acabo el proceso de obtener la información desde las paginas web, se realizaron distintas pasadas. La primera pasada, bajaba la información de la pagina web de los datos que no poseían cantidad de ambientes, ni cantidad de habitaciones. Cabe aclarar, que se lo que se bajo fue todo el código de la pagina web, es decir que dicha información debía ser parseada. Luego de parsear esta información, se realizo la segunda pasada que bajaba la información de los datos que no poseían cantidad de ambientes o cantidad de habitaciones. Aquí notamos que tanto la cantidad de cuartos como la cantidad de ambientes estaban completas en mas del 60$\%$ y por falta de tiempo se decidió trabajar con estos datos.
 		
 		\section{Análisis de Cuartos por Propiedad}
 		
-			Insertar texto acá				
-				
-				\begin{figure}
-    				\centering
-    				\makebox[\textwidth]{\includegraphics[width=\textwidth]{images/RelHabPrec}}
-    				\caption{CABA + GBA}
-				\end{figure}
-				
-				\begin{figure}
-    				\centering
-    				\makebox[\textwidth]{\includegraphics[width=\textwidth]{images/RelHabSup}}
-    				\caption{CABA + GBA}
-				\end{figure}
+			Esta sección se presenta con el objetivo de analizar la posible relación que puede existir entre la cantidad de Habitaciones de una propiedad, con el precio y/o la superficie. 				
 
-			\FloatBarrier
+			\subsection{Relación entre cantidad de habitaciones y el precio}
+				Aquí se estará analizando la relación entre la cantidad de habitaciones y el precio aproximado de una propiedad.
+				\\
+				Lo que se hizo para esta sección fue agrupar por cantidad de habitaciones, dejando el precio promedio como valor. Con dichos datos se obtuvo el siguiente gráfico:
 				
-			Insertar texto acá			
+				\begin{center}    		
+    				\includegraphics[width=\textwidth]{images/RelHabPrec}    				
+				\end{center}
+				
+			\subsection{Relación entre cantidad de habitaciones y la superficie}	
+				En esta sección se analizara la relación que se puede establecer entre la cantidad de habitaciones y el precio aproximado de una propiedad.				
+				\\
+				Para esto, se siguió un proceso similar a la sección anterior. Se agrupo por cantidad de habitaciones y se dejo el promedio de la superficies como valor. Se presenta el siguiente gráfico que representa dichas relaciones:
+				
+				\begin{center}    		
+    				\includegraphics[width=\textwidth]{images/RelHabSup}    				
+				\end{center}
+			
+			\subsection{Conclusiones}
+				
+				Como se puede observar en el gráfico de habitaciones vs precio, este sigue una tendencia creciente, es decir que a medida que aumenta la cantidad de habitaciones aumenta el precio de dicha propiedad.
+				\\
+				Se puede realizar el mismo análisis para la cantidad de habitaciones vs superficie. Se puede observar claramente que a medida que aumenta la cantidad de habitaciones, también lo hace la superficie de la propiedad. 
+				\\
+				Estos resultados son totalmente esperables. Además se puede ver que ambos gráficos siguen la misma tendencia de crecimiento, lo cual nos permite inferir que hay una estrecha relación entre las 3 variables analizadas: cantidad de habitaciones, precios y superficie.  
+							
 		
 		\section{Análisis de Ambientes por Propiedad}
 				
-			Insertar texto acá				
+			En esta sección se estará analizando la posible relación entre la cantidad de ambientes de una propiedad con el precio y/o la superficie.			
 				
-				\begin{figure}
-    				\centering
-    				\makebox[\textwidth]{\includegraphics[width=\textwidth]{images/RelAmbPrec}}
-    				\caption{CABA + GBA}
-				\end{figure}
+				\subsection{Relación entre los ambientes y el precio}
+					El objetivo de esta sección es analizar la relación entre la cantidad de ambientes y el precio de una propiedad.
+					\\
+					Al igual que en la sección anterior, lo que se hizo fue agrupar con cantidad de ambientes, dejando como valor el precio promedio.
+					\\
+					A continuación se presenta un gráfico que representa dichas relaciones:
 				
-				\begin{figure}
-    				\centering
-    				\makebox[\textwidth]{\includegraphics[width=\textwidth]{images/RelAmbSup}}
-    				\caption{CABA + GBA}
-				\end{figure}
-
-			\FloatBarrier
+					\begin{center}    		
+    					\includegraphics[width=\textwidth]{images/RelAmbPrec}    				
+					\end{center}
 				
-			Insertar texto acá
-	
+				\subsection{Relación entre los ambientes y la superficie}
+					Esta sección se presenta con el objetivo de analizar la relación entre los ambientes y la superficie de una propiedad.
+					\\
+					Para presentar los datos, lo que se hizo fue agrupar por cantidad de ambientes, y se dejo el precio promedio como valor.
+					\\
+					Se pasa a presentar un gráfico con los resultados:
+					
+					\begin{center}    		
+    					\includegraphics[width=\textwidth]{images/RelAmbPrec}    				
+					\end{center}
+					
+				\subsection{Conclusiones}
+					
+					Como se puede ver en el gráfico que representa ambientes vs precio, se presenta una tendencia creciente hasta 8 ambientes. Luego, los precios son muy variables dependiendo de la cantidad de ambientes
+					\\
+					Lo mismo ocurre con el gráfico de ambientes vs superficie, en el cual se puede observar una tendencia creciente hasta los 8 ambientes, y luego la superficie varia de acuerdo a la cantidad de ambientes.
+					\\
+					Lo que se puede decir es que el precio depende fuertemente de la superficie de una propiedad. Se puede ver que en propiedades con mayor cantidad de ambientes, como por ejemplo las propiedades que tienen mas de 8 ambientes, el precio es acorde a la superficie de dichas propiedades.
+			
+			\section{ Conclusiones generales }
+				
+				Se puede observar que en el análisis anterior los gráficos siguen la misma tendencia creciente hasta las 8 habitaciones y ambientes. Entonces, se establece cierta correlación entre los ambientes y las habitaciones. 
+				\\
+				Pero de todas formas, como se vio anteriormente, se puede notar que una vez que se superan los 8 ambientes, no se obtiene una tendencia creciente. Por lo tanto, se nota que se establece una relación muy fuerte entre el precio y la superficie de las propiedades.
 	
 	
 	\part{Análisis con Google Places}
