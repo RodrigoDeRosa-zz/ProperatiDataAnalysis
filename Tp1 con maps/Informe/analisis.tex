@@ -13,6 +13,7 @@
 \usepackage{titlesec}
 \usepackage[colorlinks=true,linkcolor=blue,urlcolor=black,bookmarksopen=true]{hyperref}
 \usepackage{bookmark}
+\usepackage{float}
 
 \newcommand{\Z}{\mathbb{Z}}
 \def\code#1{\texttt{#1}}
@@ -1631,7 +1632,7 @@ precio varia entre 0 y 600000 usd.
 				el orden de los precios. Es decir, los departamentos son los más caros, seguidos por los PHs y terminando con
 				las casas pero con precios cada vez mayores, como se esperaba.			
 			
-		\part{Análisis de la relación de las características de las propiedades con el precio/superficie}
+		\part{Análisis de las características de las propiedades y su relación precio/superficie}
 	
 		El capitulo a presentarse a continuación, tiene el objetivo de analizar las relaciones posibles entre las distintas características de una propiedad, como por ejemplo habitaciones o ambientes, con el precio o superficie de dicha propiedad.
 		
@@ -1726,7 +1727,7 @@ precio varia entre 0 y 600000 usd.
 					Se pasa a presentar un gráfico con los resultados:
 					
 					\begin{center}    		
-    					\includegraphics[width=\textwidth]{images/RelAmbPrec}    				
+    					\includegraphics[width=\textwidth]{images/RelAmbSup}    				
 					\end{center}
 					
 				\subsection{Conclusiones}
@@ -1786,22 +1787,22 @@ precio varia entre 0 y 600000 usd.
 				se filtro a todas los conjuntos de propiedades con menos de 300 entradas para las 
 				cantidades de instituciones cercanas. Por ejemplo: Si solo hay 15 propiedades con 
 				60 instituciones cercanas, estas no se tuvieron en cuenta para el análisis.
-				\begin{figure}
+				\begin{figure}[H]
     				\centering
     				\makebox[\textwidth]{\includegraphics[width=\textwidth]{images/1}}
     				\caption{CABA + GBA}
 				\end{figure}
-				\begin{figure}
+				\begin{figure}[H]
     				\centering
     				\makebox[\textwidth]{\includegraphics[width=\textwidth]{images/2}}
     				\caption{CABA}
 				\end{figure}
-				\begin{figure}
+				\begin{figure}[H]
     				\centering
     				\makebox[\textwidth]{\includegraphics[width=\textwidth]{images/3}}
     				\caption{GBA}
 				\end{figure}
-				\FloatBarrier												
+																
 				
 				Como se puede observar en los tres gráficos, hay una tendencia de un pico máximo 
 				en todos para una cantidad de instituciones cercana a 20 instituciones. 
@@ -1809,43 +1810,43 @@ precio varia entre 0 y 600000 usd.
 				de CABA casi el triple que el de GBA (6000 contra 2400 respectivamente).\\
 				Se procede a aislarlas y observar en que zonas se concentran.\\
 				
-				\begin{figure}
+				\begin{figure}[H]
     				\centering
     				\textbf{HEATMAP por ubicaciones}\par\medskip
     				\makebox[\textwidth]{\includegraphics[width=\textwidth]{images/4}}
     				\caption{CABA con 19 instituciones}
 				\end{figure}				
-				\begin{figure}
+				\begin{figure}[H]
     				\centering
     				\textbf{HEATMAP por precio del metro cuadrado}\par\medskip
     				\makebox[\textwidth]{\includegraphics[width=\textwidth]{images/5}}
     				\caption{CABA con 19 instituciones}
 				\end{figure}				
-				\begin{figure}
+				\begin{figure}[H]
     				\centering
     				\textbf{HEATMAP por ubicaciones}\par\medskip
     				\makebox[\textwidth]{\includegraphics[width=\textwidth]{images/6}}
     				\caption{CABA con 9 instituciones}
 				\end{figure}				
-				\begin{figure}
+				\begin{figure}[H]
     				\centering
     				\textbf{HEATMAP por precio del metro cuadrado}\par\medskip
     				\makebox[\textwidth]{\includegraphics[width=\textwidth]{images/7}}
     				\caption{CABA con 9 instituciones}
 				\end{figure}				
-				\begin{figure}
+				\begin{figure}[H]
     				\centering
     				\textbf{HEATMAP por ubicaciones}\par\medskip
     				\makebox[\textwidth]{\includegraphics[width=\textwidth]{images/8}}
     				\caption{GBA con 17 instituciones}
 				\end{figure}
-				\begin{figure}
+				\begin{figure}[H]
     				\centering
     				\textbf{HEATMAP por precio del metro cuadrado}\par\medskip
     				\makebox[\textwidth]{\includegraphics[width=\textwidth]{images/9}}
     				\caption{GBA con 17 instituciones}
 				\end{figure}
-				\FloatBarrier
+				
 
 				\textbf{¿Que conclusiones se obtienen de estos heatmaps?}\\	
 					\tab Se pueden ubicar polos en donde hay una cantidad importante de instituciones educativas 
@@ -2056,22 +2057,22 @@ precio varia entre 0 y 600000 usd.
 		instituciones educativas se muy alta y por esta razón priorizar la cercanía a las instituciones 
 		dejando de lado otras comodidades como puede ser un mayor espacio.			
 		
-				\begin{figure}
+				\begin{figure}[H]
     				\centering
     				\makebox[\textwidth]{\includegraphics[width=\textwidth]{images/10}}
     				\caption{CABA + GBA}
 				\end{figure}
-				\begin{figure}
+				\begin{figure}[H]
     				\centering
     				\makebox[\textwidth]{\includegraphics[width=\textwidth]{images/11}}
     				\caption{CABA}
 				\end{figure}
-				\begin{figure}
+				\begin{figure}[H]
     				\centering
     				\makebox[\textwidth]{\includegraphics[width=\textwidth]{images/12}}
     				\caption{GBA}
 				\end{figure}
-				\FloatBarrier
+				
 				
 				Al darle una vista rápida a los gráficos se  ven que los comportamientos de 
 				CABA Y GBA son muy distintos. Pero en este caso los picos máximos tienen 
@@ -2094,31 +2095,31 @@ precio varia entre 0 y 600000 usd.
 				para el análisis. Para ubicar las propiedades en cuestión se realiza 
 				un heapmap con ellas.
 					
-				\begin{figure}
+				\begin{figure}[H]
     				\centering
     				\textbf{HEATMAP por ubicaciones}\par\medskip
     				\makebox[\textwidth]{\includegraphics[width=\textwidth]{images/13}}
     				\caption{CABA con 5 instituciones}
 				\end{figure}				
-				\begin{figure}
+				\begin{figure}[H]
     				\centering
     				\textbf{HEATMAP por tamaño de superficie}\par\medskip
     				\makebox[\textwidth]{\includegraphics[width=\textwidth]{images/14}}
     				\caption{CABA con 5 instituciones}
 				\end{figure}				
-				\begin{figure}
+				\begin{figure}[H]
     				\centering
     				\textbf{HEATMAP por ubicaciones}\par\medskip
     				\makebox[\textwidth]{\includegraphics[width=\textwidth]{images/15}}
     				\caption{CABA con 38 instituciones}
 				\end{figure}				
-				\begin{figure}
+				\begin{figure}[H]
     				\centering
     				\textbf{HEATMAP por tamaño de superficie}\par\medskip
     				\makebox[\textwidth]{\includegraphics[width=\textwidth]{images/16}}
     				\caption{CABA con 38 instituciones}
 				\end{figure}				
-				\FloatBarrier
+				
 				
 				\textbf{¿Que conclusiones se obtienen de estos heatmaps?}\\
 				En los heatmaps con 5 propiedades en CABA se marca la tendencia que ubicaba a 
@@ -2140,22 +2141,22 @@ precio varia entre 0 y 600000 usd.
 				de propiedades con un precio menor a \textdollar USD8000 teniendo en cuenta 
 				el análisis inicial.
 				
-				\begin{figure}
+				\begin{figure}[H]
     				\centering
-    				\makebox[\textwidth]{\includegraphics[width=\textwidth]{images/17}}
+    				\includegraphics[width=\textwidth]{images/17}
     				\caption{CABA + GBA}
 				\end{figure}
-				\begin{figure}
+				\begin{figure}[H]
     				\centering
-    				\makebox[\textwidth]{\includegraphics[width=\textwidth]{images/18}}
+    				\includegraphics[width=\textwidth]{images/18}
     				\caption{CABA}
 				\end{figure}
-				\begin{figure}
+				\begin{figure}[H]
     				\centering
-    				\makebox[\textwidth]{\includegraphics[width=\textwidth]{images/19}}
+    				\includegraphics[width=\textwidth]{images/19}
     				\caption{GBA}
 				\end{figure}
-				\FloatBarrier
+				
 				
 				A simple vista los gráficos no dicen mucho. Es observable una leve tendencia de 
 				crecimiento en cuanto a mayor cantidad de locales el precio de las propiedades 
@@ -2165,31 +2166,31 @@ precio varia entre 0 y 600000 usd.
 				Se procede a ubicar donde están los lugares con menores locales y donde están 
 				los que mas tienen, es decir, los extremos.
 				
-				\begin{figure}
+				\begin{figure}[H][H]
     				\centering
     				\textbf{Heatmap con el peso en el precio por metro cuadrado de locales gastronómicos}\par\medskip
-    				\makebox[\textwidth]{\includegraphics[width=\textwidth]{images/20}}
+    				\includegraphics[width=\textwidth]{images/20}
     				\caption{CABA + GBA de 0 a 20 locales}
 				\end{figure}				
-				\begin{figure}
+				\begin{figure}[H][H]
     				\centering
     				\textbf{Mismo Heatmap que la figura anterior pero con ZOOM}\par\medskip
-    				\makebox[\textwidth]{\includegraphics[width=\textwidth]{images/21}}
+    				\includegraphics[width=\textwidth]{images/21}
     				\caption{CABA + GBA de 0 a 20 locales}
 				\end{figure}
-				\FloatBarrier				
+								
 				
 				De estos últimos heatmaps se puede extraer la interesante conclusión de que 
 				las propiedades con pocos locales gastronómicos a su alrededor pertenecen a 
 				GBA y prácticamente excluyen a CABA.				
 								
-				\begin{figure}
+				\begin{figure}[H][H]
     				\centering
     				\textbf{Heatmap con el peso en el precio por metro cuadrado de locales gastronómicos}\par\medskip
-    				\makebox[\textwidth]{\includegraphics[width=\textwidth]{images/22}}
+    				\includegraphics[width=\textwidth]{images/22}
     				\caption{CABA + GBA de 180 a 200 locales}
 				\end{figure}								
-				\FloatBarrier
+				
 				
 				Continuando con el análisis previo, las propiedades con entre 180 y 200 
 				locales gastronómicos en sus cercanías están en su totalidad ubicados en CABA, 
@@ -2225,22 +2226,22 @@ precio varia entre 0 y 600000 usd.
 				Finalmente recortando por cantidad de puntos culturales menores a 65 y 
 				que estos tengan por lo menos 10 repeticiones se obtienen los siguientes gráficos:
 
-				\begin{figure}
+				\begin{figure}[H]
     				\centering
     				\makebox[\textwidth]{\includegraphics[width=\textwidth]{images/23}}
     				\caption{CABA + GBA}
 				\end{figure}
-				\begin{figure}
+				\begin{figure}[H]
     				\centering
     				\makebox[\textwidth]{\includegraphics[width=\textwidth]{images/24}}
     				\caption{CABA}
 				\end{figure}
-				\begin{figure}
+				\begin{figure}[H]
     				\centering
     				\makebox[\textwidth]{\includegraphics[width=\textwidth]{images/25}}
     				\caption{GBA}
 				\end{figure}
-				\FloatBarrier
+				
 				
 				Instantáneamente se percibe lo que conociendo el territorio seria sospechable. 
 				Esto es en primer medida que la cantidad de puntos de interés cultural en 
@@ -2250,13 +2251,13 @@ precio varia entre 0 y 600000 usd.
 				lugares con 0 o 1 puntos cercanos. Mas allá de estos conceptos, los tendencias 
 				sugieren ser a simple vista constantes.\\ 
 				\tab Se trata de ubicar a las propiedades con pocos puntos cercanos en zonas particulares.						 					
-				\begin{figure}
+				\begin{figure}[H]
     				\centering
     				\textbf{Heatmap con el peso en las ubicaciones}\par\medskip
     				\makebox[\textwidth]{\includegraphics[width=\textwidth]{images/26}}
     				\caption{CABA + GBA con 0 o 1 puntos de interés cultural cerca}
 				\end{figure}				
-				\FloatBarrier
+				
 				
 				Como los gráficos anticipaban, casi en su totalidad estas propiedades están ubicadas en GBA. 
 				Sin embargo surge un punto interesante y es que se concentran mas que nada en la zona 
@@ -2270,12 +2271,12 @@ precio varia entre 0 y 600000 usd.
 				recortando a las cantidades de puntos de interés con bajas frecuencias, 
 				para así encontrar concentraciones mas importantes.	
 				
-				\begin{figure}
+				\begin{figure}[H]
     				\centering
     				\makebox[\textwidth]{\includegraphics[width=\textwidth]{images/27}}
     				\caption{CABA}
 				\end{figure}
-				\FloatBarrier
+				
 				
 				Los picos en 1 y 2 instituciones se siguen sosteniendo mas allá de la filtración de 
 				los datos, esto podría sugerir o que la gran mayoría de las propiedades en CABA 
@@ -2283,13 +2284,13 @@ precio varia entre 0 y 600000 usd.
 				quizás tener pocas instituciones cerca realmente mejora el precio de la propiedad.\\
 				\tab Se asilan los puntos en CABA con una o dos instituciones cerca y se las ubica en un heatmap.
 				
-				\begin{figure}
+				\begin{figure}[H]
     				\centering
     				\textbf{Heatmap con el peso en las ubicaciones}\par\medskip
     				\makebox[\textwidth]{\includegraphics[width=\textwidth]{images/28}}
     				\caption{CABA  con 2 o 3 puntos de interés cultural cerca}
 				\end{figure}				
-				\FloatBarrier
+				
 				
 				Las propiedades en cuestión están ubicadas en las periferias de la zona céntrica de CABA  
 				(salvo excepciones). Esto muestra que hay un numero de propiedades con un valor alto 
@@ -2301,13 +2302,13 @@ precio varia entre 0 y 600000 usd.
 				
 				\textbf{Principales polos de puntos de interés cultural}
 				
-				\begin{figure}
+				\begin{figure}[H]
     				\centering
     				\textbf{Heatmap con el peso en la cantidad de puntos de interés cultural cercanos}\par\medskip
     				\makebox[\textwidth]{\includegraphics[width=\textwidth]{images/29}}
     				\caption{CABA propiedades con mayor cantidad puntos de interés cultural cerca}
 				\end{figure}				
-				\FloatBarrier
+				
 				
 				Analizando mas detalladamente las posiciones de las propiedades en el mapa se encuentran 
 				los siguientes sectores como principales polos de lugares culturales:
@@ -2334,22 +2335,22 @@ precio varia entre 0 y 600000 usd.
 				se filtro a todas los conjuntos de propiedades con menos de 10 entradas para las 
 				cantidades de paradas cercanas y así levemente limpiar de distorsión al set de datos.
 				 		
-				\begin{figure}
+				\begin{figure}[H]
     				\centering
     				\makebox[\textwidth]{\includegraphics[width=\textwidth]{images/30}}
     				\caption{CABA + GBA}
 				\end{figure}
-				\begin{figure}
+				\begin{figure}[H]
     				\centering
     				\makebox[\textwidth]{\includegraphics[width=\textwidth]{images/31}}
     				\caption{CABA}
 				\end{figure}
-				\begin{figure}
+				\begin{figure}[H]
     				\centering
     				\makebox[\textwidth]{\includegraphics[width=\textwidth]{images/32}}
     				\caption{GBA}
 				\end{figure}
-				\FloatBarrier
+				
 				
 				Analizando el gráfico que contempla GBA + CABA se puede ver una especie de campana en donde 
 				los menores precios por metro cuadrado estarían concentrados en los extremos y en el centro 
@@ -2363,19 +2364,19 @@ precio varia entre 0 y 600000 usd.
 				\tab\textdollar USD2000 por metro cuadrado parecería ser una linea prudente por la cual 
 				dividir las propiedades y analizar la distribución en la cantidad de paradas. 
 
-				\begin{figure}
+				\begin{figure}[H]
     				\centering
     				\textbf{Heatmap con el peso puesto en la cantidad de paradas}\par\medskip
     				\makebox[\textwidth]{\includegraphics[width=\textwidth]{images/33}}
     				\caption{CABA + GBA propiedades con precio por metro cuadrado mayor a \textdollar USD2000}
 				\end{figure}
-				\begin{figure}
+				\begin{figure}[H]
     				\centering
     				\textbf{Zoom de la figura anterior}\par\medskip
     				\makebox[\textwidth]{\includegraphics[width=\textwidth]{images/34}}
     				\caption{CABA + GBA propiedades con precio por metro cuadrado mayor a \textdollar USD2000}
 				\end{figure}								
-				\FloatBarrier
+				
 				
 				Hay una clara concentración en la capital, con la excepción de centros de los cordones mas 
 				inmediatos de GBA. Viendo el siguiente mapa de trenes y subterráneos, este muestra como 
@@ -2385,18 +2386,18 @@ precio varia entre 0 y 600000 usd.
 				distribución de paradas de colectivos por la capital es mas pareja, esto apoyaría a 
 				la hipótesis planteada.
 				
-				\begin{figure}
+				\begin{figure}[H]
     				\centering
     				\makebox[\textwidth]{\includegraphics[width=\textwidth]{images/35}}
     				\caption{Red de Subterraneos y Trenes de Buenos Aires}
 				\end{figure}
-				\begin{figure}
+				\begin{figure}[H]
     				\centering
     				\textbf{Heatmap con el peso puesto en la cantidad de paradas}\par\medskip
     				\makebox[\textwidth]{\includegraphics[width=\textwidth]{images/36}}
     				\caption{CABA + GBA propiedades con precio por metro cuadrado menor a \textdollar USD2000}
 				\end{figure}
-				\FloatBarrier
+				
 				
 				La cantidad de propiedades menores a \textdollar USD2000 parecerían ser las de menor 
 				cantidad de paradas de transporte publico cercanas. Eso se denota ya que los heatmaps 
@@ -2409,13 +2410,13 @@ precio varia entre 0 y 600000 usd.
 				\textbf{Zonas de CABA + GBA por mayor cantidad de paradas}\\
 				Se ubican las propiedades con mas de 35 paradas de transporte publico cercanas.
 				
-				\begin{figure}
+				\begin{figure}[H]
     				\centering
     				\textbf{Heatmap con el peso puesto en la cantidad de paradas}\par\medskip
     				\makebox[\textwidth]{\includegraphics[width=\textwidth]{images/37}}
     				\caption{CABA + GBA propiedades con mas de 35 paradas cerca}
 				\end{figure}
-				\FloatBarrier				
+								
 				
 				Gran parte de estos pertenecen al microcentro de CABA, mientras que a la vez se 
 				encuentran ciertos puntos con una alto concentracion:
@@ -2425,14 +2426,14 @@ precio varia entre 0 y 600000 usd.
 					\item Constitucion
 					\item Quilmes
 				\end{itemize}
-				\begin{figure}
+				\begin{figure}[H]
     				\centering
     				\textbf{Heatmap anterior con ZOOM en CABA}\par\medskip
     				\makebox[\textwidth]{\includegraphics[width=\textwidth]{images/38}}
     				\caption{CABA propiedades con mas de 35 paradas cerca}
 				\end{figure}
 
-				\FloatBarrier
+				
 				
 				Lógicamente, las propiedades con mayor cantidad de paradas cercanas se encuentran en el 
 				micro-centro porteño, de donde salen todas las lineas de subterráneo y una abundante 
@@ -2443,13 +2444,13 @@ precio varia entre 0 y 600000 usd.
 				Se ubican las propiedades con 7 o menos paradas de transporte publico cercanas. 
 				(Heatmap con el peso en la cantidad de paradas)
 				
-				\begin{figure}
+				\begin{figure}[H]
     				\centering
     				\textbf{Heatmap con el peso en la cantidad de paradas}\par\medskip
     				\makebox[\textwidth]{\includegraphics[width=\textwidth]{images/39}}
     				\caption{CABA propiedades con 7 o menos paradas de transporte publico cercanas}
 				\end{figure}
-				\FloatBarrier
+				
 				
 				El Heatmap permite rápidamente identificar a Puerto Madero, Tigre, Pacheco y parte de 
 				San Isidro como lugares en donde hay una reducida cantidad de paradas de transporte 
@@ -2468,23 +2469,23 @@ precio varia entre 0 y 600000 usd.
 					\item Linea H (Amarilla)
 				\end{itemize}
 			
-				\begin{figure}
+				\begin{figure}[H]
     				\centering
     				\makebox[\textwidth]{\includegraphics[width=\textwidth]{images/40}}
     				\caption{Red de Subterraneos Buenos Aires}
 				\end{figure}
-				\FloatBarrier
+				
 				
 				Teniendo en cuenta dicho tendido se procede a graficar en un heapmap el conjunto de propiedades 
 				(CABA + GBA) teniendo en cuenta como peso del Heatmap la cantidad de paradas cercanas.
 			
-				\begin{figure}
+				\begin{figure}[H]
     				\centering
     				\textbf{Heatmap con el peso en la cantidad de paradas}\par\medskip
     				\makebox[\textwidth]{\includegraphics[width=\textwidth]{images/41}}
     				\caption{CABA con la Red de Subterráneos de Buenos Aires de fondo}
 				\end{figure}
-				\FloatBarrier
+				
 				
 				Las zonas rojas se ubican exactamente sobre el camino de 
 				los subterráneos. Sin embargo hay huecos en donde esto no ocurre. 
@@ -2494,13 +2495,13 @@ precio varia entre 0 y 600000 usd.
 				heatmap utilizando el peso de este como el precio de las propiedades 
 				por metro cuadrado.			
 			
-				\begin{figure}
+				\begin{figure}[H]
     				\centering
     				\textbf{Heatmap con el peso en el precio por metro cuadrado}\par\medskip
     				\makebox[\textwidth]{\includegraphics[width=\textwidth]{images/42}}
     				\caption{CABA con la Red de Subterráneos de Buenos Aires de fondo}
 				\end{figure}
-				\FloatBarrier
+				
 				
 				Casi en su totalidad, las propiedades cubren las lineas de subterráneo. 
 				Con la salvedad de un pequeño tramo de la linea B. Esto marca una clara tendencia en 

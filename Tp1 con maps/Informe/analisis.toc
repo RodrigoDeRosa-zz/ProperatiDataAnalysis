@@ -89,7 +89,7 @@
 \contentsline {subsection}{\numberline {12.4}Departamentos}{63}{subsection.12.4}
 \contentsline {subsection}{\numberline {12.5}Locales}{63}{subsection.12.5}
 \contentsline {subsection}{\numberline {12.6}An\IeC {\'a}lisis conjunto}{64}{subsection.12.6}
-\contentsline {part}{III\hspace {1em}An\IeC {\'a}lisis de la relaci\IeC {\'o}n de las caracter\IeC {\'\i }sticas de las propiedades con el precio/superficie}{64}{part.3}
+\contentsline {part}{III\hspace {1em}An\IeC {\'a}lisis de las caracter\IeC {\'\i }sticas de las propiedades y su relaci\IeC {\'o}n precio/superficie}{64}{part.3}
 \contentsline {section}{\numberline {13}Preparaci\IeC {\'o}n y Recolecci\IeC {\'o}n de Datos v\IeC {\'\i }a URLs}{65}{section.13}
 \contentsline {section}{\numberline {14}An\IeC {\'a}lisis de Cuartos por Propiedad}{66}{section.14}
 \contentsline {subsection}{\numberline {14.1}Relaci\IeC {\'o}n entre cantidad de habitaciones y el precio}{66}{subsection.14.1}
@@ -103,26 +103,26 @@
 \contentsline {part}{IV\hspace {1em}An\IeC {\'a}lisis con Google Places}{69}{part.4}
 \contentsline {section}{\numberline {17}An\IeC {\'a}lisis Instituciones Educativas}{70}{section.17}
 \contentsline {subsection}{\numberline {17.1}An\IeC {\'a}lisis del Precio por Metro Cuadrado}{70}{subsection.17.1}
-\contentsline {subsection}{\numberline {17.2}An\IeC {\'a}lisis de la Superficie Total de la Propiedad en Metros Cuadrados}{79}{subsection.17.2}
-\contentsline {section}{\numberline {18}An\IeC {\'a}lisis de Locales Gastron\IeC {\'o}micos}{83}{section.18}
-\contentsline {subsection}{\numberline {18.1}An\IeC {\'a}lisis del precio por metro cuadrado}{83}{subsection.18.1}
-\contentsline {section}{\numberline {19}An\IeC {\'a}lisis de Puntos de Inter\IeC {\'e}s Cultural}{87}{section.19}
-\contentsline {subsection}{\numberline {19.1}An\IeC {\'a}lisis del precio por metro cuadrado}{87}{subsection.19.1}
+\contentsline {subsection}{\numberline {17.2}An\IeC {\'a}lisis de la Superficie Total de la Propiedad en Metros Cuadrados}{80}{subsection.17.2}
+\contentsline {section}{\numberline {18}An\IeC {\'a}lisis de Locales Gastron\IeC {\'o}micos}{84}{section.18}
+\contentsline {subsection}{\numberline {18.1}An\IeC {\'a}lisis del precio por metro cuadrado}{84}{subsection.18.1}
+\contentsline {section}{\numberline {19}An\IeC {\'a}lisis de Puntos de Inter\IeC {\'e}s Cultural}{88}{section.19}
+\contentsline {subsection}{\numberline {19.1}An\IeC {\'a}lisis del precio por metro cuadrado}{89}{subsection.19.1}
 \contentsline {section}{\numberline {20}An\IeC {\'a}lisis de Transporte Publico}{93}{section.20}
 \contentsline {subsection}{\numberline {20.1}An\IeC {\'a}lisis del precio por metro cuadrado}{93}{subsection.20.1}
-\contentsline {section}{\numberline {21}An\IeC {\'a}lisis de Espacios Verdes}{105}{section.21}
-\contentsline {subsection}{\numberline {21.1}Precio de la propiedad en base a la cantidad de Espacios Verdes cercanos}{105}{subsection.21.1}
-\contentsline {subsubsection}{\numberline {21.1.1}Espacios Verdes y su peso en CABA}{107}{subsubsection.21.1.1}
-\contentsline {subsubsection}{\numberline {21.1.2}Espacios Verdes y su peso en GBA}{108}{subsubsection.21.1.2}
-\contentsline {subsection}{\numberline {21.2}Espacios Verdes y c\IeC {\'o}mo afectan a cada tipo de propiedad}{109}{subsection.21.2}
-\contentsline {subsubsection}{\numberline {21.2.1}Locales}{109}{subsubsection.21.2.1}
-\contentsline {subsubsection}{\numberline {21.2.2}Departamentos}{110}{subsubsection.21.2.2}
-\contentsline {subsubsection}{\numberline {21.2.3}PHs}{111}{subsubsection.21.2.3}
-\contentsline {subsubsection}{\numberline {21.2.4}Casas}{112}{subsubsection.21.2.4}
-\contentsline {subsubsection}{\numberline {21.2.5}Conclusiones}{113}{subsubsection.21.2.5}
-\contentsline {subsection}{\numberline {21.3}Propiedades seg\IeC {\'u}n sus Espacios Verdes: ubicaci\IeC {\'o}n geogr\IeC {\'a}fica}{113}{subsection.21.3}
-\contentsline {subsubsection}{\numberline {21.3.1}Grupos con m\IeC {\'a}s espacios verdes}{113}{subsubsection.21.3.1}
-\contentsline {subsubsection}{\numberline {21.3.2}Grupos intermedios}{114}{subsubsection.21.3.2}
-\contentsline {subsubsection}{\numberline {21.3.3}Grupos con menor cantidad de espacios verdes}{114}{subsubsection.21.3.3}
-\contentsline {subsubsection}{\numberline {21.3.4}Conclusiones de la ubicaci\IeC {\'o}n geogr\IeC {\'a}fica}{116}{subsubsection.21.3.4}
-\contentsline {section}{\numberline {22}Conclusiones Generales}{119}{section.22}
+\contentsline {section}{\numberline {21}An\IeC {\'a}lisis de Espacios Verdes}{102}{section.21}
+\contentsline {subsection}{\numberline {21.1}Precio de la propiedad en base a la cantidad de Espacios Verdes cercanos}{102}{subsection.21.1}
+\contentsline {subsubsection}{\numberline {21.1.1}Espacios Verdes y su peso en CABA}{104}{subsubsection.21.1.1}
+\contentsline {subsubsection}{\numberline {21.1.2}Espacios Verdes y su peso en GBA}{105}{subsubsection.21.1.2}
+\contentsline {subsection}{\numberline {21.2}Espacios Verdes y c\IeC {\'o}mo afectan a cada tipo de propiedad}{106}{subsection.21.2}
+\contentsline {subsubsection}{\numberline {21.2.1}Locales}{106}{subsubsection.21.2.1}
+\contentsline {subsubsection}{\numberline {21.2.2}Departamentos}{107}{subsubsection.21.2.2}
+\contentsline {subsubsection}{\numberline {21.2.3}PHs}{108}{subsubsection.21.2.3}
+\contentsline {subsubsection}{\numberline {21.2.4}Casas}{109}{subsubsection.21.2.4}
+\contentsline {subsubsection}{\numberline {21.2.5}Conclusiones}{110}{subsubsection.21.2.5}
+\contentsline {subsection}{\numberline {21.3}Propiedades seg\IeC {\'u}n sus Espacios Verdes: ubicaci\IeC {\'o}n geogr\IeC {\'a}fica}{110}{subsection.21.3}
+\contentsline {subsubsection}{\numberline {21.3.1}Grupos con m\IeC {\'a}s espacios verdes}{110}{subsubsection.21.3.1}
+\contentsline {subsubsection}{\numberline {21.3.2}Grupos intermedios}{111}{subsubsection.21.3.2}
+\contentsline {subsubsection}{\numberline {21.3.3}Grupos con menor cantidad de espacios verdes}{111}{subsubsection.21.3.3}
+\contentsline {subsubsection}{\numberline {21.3.4}Conclusiones de la ubicaci\IeC {\'o}n geogr\IeC {\'a}fica}{113}{subsubsection.21.3.4}
+\contentsline {section}{\numberline {22}Conclusiones Generales}{116}{section.22}
