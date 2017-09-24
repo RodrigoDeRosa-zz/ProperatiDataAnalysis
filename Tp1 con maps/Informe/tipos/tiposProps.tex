@@ -11,8 +11,6 @@
 \usepackage{caratula}
 \usepackage[section]{placeins}
 \usepackage{titlesec}
-\usepackage[colorlinks=true,linkcolor=blue,urlcolor=black,bookmarksopen=true]{hyperref}
-\usepackage{bookmark}
 
 \newcommand{\Z}{\mathbb{Z}}
 \def\code#1{\texttt{#1}}
@@ -212,149 +210,151 @@
 				  	\end{center}
 				  	\tab Vemos que, como dijimos previamente, hay una gran cantidad en la zona céntrica de la ciudad mientras que
 				  	también aparece el barrio de Martínez en Zona Norte y Caballito en el centro-sur geográfico de CABA.
-			\subsection{¿Dónde están las propiedades más chicas según su tipo?}	
-				\subsubsection{Casas}
-					Para las casas, el \emph{Bottom 5} está compuesto por los siguientes barrios:
-					\begin{center}
-						\begin{tabular}{ |c|c|c| }
-							\hline
-							\multicolumn{3}{|c|}{Superficie promedio de las casas por barrio}\\
-							\hline
-							\hline
-							Puesto & Barrio & Superficie [$m^2$]\\
-							\hline
-							5 & José León Suarez & 176\\
-							4 & Remedios de Escalada & 175\\
-							3 & Lanús & 173\\
-							2 & Munro & 161 \\
-							1 & Llavallol & 160\\
-							\hline
-						\end{tabular}
-					\end{center}
-					\tab Aquí podemos ver que incluso el barrio con el promedio más pequeño tiene una superficie promedio mayor
-					a la de los barrios con mayor superficie promedio en el caso de los PHs y los departamentos. \\
-					\tab Si se grafican estos cinco barrios:
-					\begin{center}
-   		    				\includegraphics[width=\textwidth]{images/houseSurfaceBottomBar}
-				  	\end{center}
-				  	\tab Se puede ver la poca diferencia que hay entre cada uno de los barrios, siendo entre los cinco de sólo
-				  	$16m^2$ mientras que entre los primeros tres hay sólo $3m^2$ de diferencia. \\
-				  	\tab En cuanto a la ubicación geográfica de estos barrios, podemos ver el siguiente mapa:
-				  	\begin{center}
-   		    				\includegraphics[width=\textwidth]{images/houseSurfaceBottomMap}
-				  	\end{center}
-				  	\tab Aquí se observa que los barrios con menor promedio de superficie para las casas, al igual que ellos con
-				  	mayor promedio, se encuentra en la provincia de Buenos Aires, divido entre el sur y el norte. Tanto para el
-				  	sur como para el norte podemos ver que, salvo por Munro, no son barrios del primer cordón del conurbano sino
-				  	del segundo. Es decir, al igual que en el Top 5, encontramos las casas con menor superficie en lugares alejados
-				  	de la Capital Federal (aunque en este caso más cercanos que en el anterior).
-				\subsubsection{PHs}
-					En el caso de los PHs, tenemos un \emph{Bottom 5} de la siguiente forma:
-					\begin{center}
-						\begin{tabular}{ |c|c|c| }
-							\hline
-							\multicolumn{3}{|c|}{Superficie promedio de los PHs por barrio}\\
-							\hline
-							\hline
-							Puesto & Barrio & Superficie [$m^2$]\\
-							\hline
-							5 & Saavedra & 89\\
-							4 & Lanús & 87\\
-							3 & Beccar & 87\\
-							2 & Quilmes & 82\\
-							1 & Parque Chacabuco & 79\\
-							\hline
-						\end{tabular}
-					\end{center}
-					\tab Aquí, nuevamente vemos una diferencia muy pequeña entre el quinto y el primero. Vemos que se repite Lanús,
-					por lo que podríamos comenzar a suponer que es un barrio donde las propiedades tienden a ser pequeñas. \\
-					\tab Si analizamos la tabla con un gráfico de barras, nuevamente veremos una diferencia entre barrios muy 
-					pequeña. De hecho, Lanús y Beccar comparten el mismo valor.
-					\begin{center}
-   		    				\includegraphics[width=\textwidth]{images/phSurfaceBottomBar}
-				  	\end{center}
-				  	\tab En cuanto a la ubicación geográfica, veremos una ubicación de los barrios muy variada:
-				  	\begin{center}
-   		    				\includegraphics[width=\textwidth]{images/phSurfaceBottomMap}
-				  	\end{center}
-				  	\tab Desde Saavedra y Parque Chacabuco en CABA, hasta dos barrios alejados como Beccar en Zona Norte y Quilmes
-				  	en Zona Sur.
-				\subsubsection{Departamentos}
-					El \emph{Bottom 5} de los departamentos está conformado por:
-					\begin{center}
-						\begin{tabular}{ |c|c|c| }
-							\hline
-							\multicolumn{3}{|c|}{Superficie promedio de los departamentos por barrio}\\
-							\hline
-							\hline
-							Puesto & Barrio & Superficie [$m^2$]\\
-							\hline
-							5 & Munro & 50\\
-							4 & Villa Luzuriaga & 48\\
-							3 & Morón & 48\\
-							2 & Parque Chas & 46\\
-							1 & Boedo & 40\\
-							\hline
-						\end{tabular}
-					\end{center}
-					\tab La superficie promedio para estos departamentos es de aproximadamente la mitad de los PHs más pequeños
-					y tienen un promedio menor al $30\%$ de los departamentos más grandes. Aquí encontramos nuevamente a Munro, que
-					también se encuentra en el \emph{Bottom 5} de las casas. \\
-					\tab Aquí, nuevamente, un gráfico de barras nos dará cinco barras muy similares, con Villa Luzuriaga y Morón
-					compartiendo el mismo valor y una diferencia entre el primero y el quinto de sólo  $10m^2$.
-					\begin{center}
-   		    				\includegraphics[width=\textwidth]{images/apartmentSurfaceBottomBar}
-				  	\end{center}
-				  	\tab En cuanto a la ubicación geográfica, si observamos el siguiente mapa:
-				  	\begin{center}
-   		    				\includegraphics[width=\textwidth]{images/apartmentSurfaceBottomMap}
-				  	\end{center}
-				  	\tab Podemos ver que no hay una tendencia particular, pues encontramos barrios dentro de Capital Federal, en la
-				  	Zona Norte y en la Zona Oeste, siendo dos los barrios de la última y dos los de la primera.
-				\subsubsection{Locales}
-					Finalmente, para los locales, el \emph{Bottom 5} es el siguiente:
-					\begin{center}
-						\begin{tabular}{ |c|c|c| }
-							\hline
-							\multicolumn{3}{|c|}{Superficie promedio de los locales por barrio}\\
-							\hline
-							\hline
-							Puesto & Barrio & Superficie [$m^2$]\\
-							\hline
-							5 & Palermo & 145\\
-							4 & Ramos Mejía & 125\\
-							3 & Villa Crespo & 120\\
-							2 & Barrio Norte & 119\\
-							1 & Belgrano & 92\\
-							\hline
-						\end{tabular}
-					\end{center}
-					\tab Esta tabla nos permite ver que entre los integrantes del \emph{Bottom 5} y los del \emph{Top 5} hay una
-					variación del $42\%$, que es la más pequeña entre todos los tipos. \\
-					\tab El hecho de que Belgrano sea el más pequeño se lo atribuímos a la cantidad de locales que se pueden
-					encontrar en dicho barrio tanto en avenidas como Cabildo o en galerías comerciales en esa misma avenida, en donde
-					se encuentran muchísimos locales muy pequeños uno al lado del otro.
-					\tab En este caso, el gráfico de barras si mostrará una variación importante, pues Belgrano tiene una
-					superficie promedio que representa el $63\%$ de la de Palermo.
-					\begin{center}
-   		    				\includegraphics[width=\textwidth]{images/storeSurfaceBottomBar}
-				  	\end{center}
-				  	\tab Finalmente, si analizamos la ubicación geográfica de estos barrios, vemos lo siguiente:
-				  	\begin{center}
-   		    				\includegraphics[width=\textwidth]{images/storeSurfaceBottomMap}
-				  	\end{center}
-				  	\tab La mayoría de los barrios se encuentran en una zona casi continua del Centro-Norte de Capital Federal con
-				  	la excepcion de Ramos Mejía en Zona Oeste. \\
-				  	\tab Se puede observar, si se compara con el \emph{Top 5}, se puede ver que los barrios en este último se
-				  	encuentran 'de Recoleta para el Sur' y en el caso actual se encuentran 'de Recoleta para el Norte'. 
+			\subsection{¿Dónde están las propiedades más chicas según su tipo?}
+
+        \subsubsection{Casas}
+          Para las casas, el \emph{Bottom 5} está compuesto por los siguientes barrios:
+          \begin{center}
+            \begin{tabular}{ |c|c|c| }
+              \hline
+              \multicolumn{3}{|c|}{Superficie promedio de las casas por barrio}\\
+              \hline
+              \hline
+              Puesto & Barrio & Superficie [$m^2$]\\
+              \hline
+              5 & José León Suarez & 176\\
+              4 & Remedios de Escalada & 175\\
+              3 & Lanús & 173\\
+              2 & Munro & 161 \\
+              1 & Llavallol & 160\\
+              \hline
+            \end{tabular}
+          \end{center}
+          \tab Aquí podemos ver que incluso el barrio con el promedio más pequeño tiene una superficie promedio mayor
+          a la de los barrios con mayor superficie promedio en el caso de los PHs y los departamentos. \\
+          \tab Si se grafican estos cinco barrios:
+          \begin{center}
+                  \includegraphics[width=\textwidth]{images/houseSurfaceBottomBar}
+            \end{center}
+            \tab Se puede ver la poca diferencia que hay entre cada uno de los barrios, siendo entre los cinco de sólo
+            $16m^2$ mientras que entre los primeros tres hay sólo $3m^2$ de diferencia. \\
+            \tab En cuanto a la ubicación geográfica de estos barrios, podemos ver el siguiente mapa:
+            \begin{center}
+                  \includegraphics[width=\textwidth]{images/houseSurfaceBottomMap}
+            \end{center}
+            \tab Aquí se observa que los barrios con menor promedio de superficie para las casas, al igual que ellos con
+            mayor promedio, se encuentra en la provincia de Buenos Aires, divido entre el sur y el norte. Tanto para el
+            sur como para el norte podemos ver que, salvo por Munro, no son barrios del primer cordón del conurbano sino
+            del segundo. Es decir, al igual que en el Top 5, encontramos las casas con menor superficie en lugares alejados
+            de la Capital Federal (aunque en este caso más cercanos que en el anterior).
+        \subsubsection{PHs}
+          En el caso de los PHs, tenemos un \emph{Bottom 5} de la siguiente forma:
+          \begin{center}
+            \begin{tabular}{ |c|c|c| }
+              \hline
+              \multicolumn{3}{|c|}{Superficie promedio de los PHs por barrio}\\
+              \hline
+              \hline
+              Puesto & Barrio & Superficie [$m^2$]\\
+              \hline
+              5 & Saavedra & 89\\
+              4 & Lanús & 87\\
+              3 & Beccar & 87\\
+              2 & Quilmes & 82\\
+              1 & Parque Chacabuco & 79\\
+              \hline
+            \end{tabular}
+          \end{center}
+          \tab Aquí, nuevamente vemos una diferencia muy pequeña entre el quinto y el primero. Vemos que se repite Lanús,
+          por lo que podríamos comenzar a suponer que es un barrio donde las propiedades tienden a ser pequeñas. \\
+          \tab Si analizamos la tabla con un gráfico de barras, nuevamente veremos una diferencia entre barrios muy
+          pequeña. De hecho, Lanús y Beccar comparten el mismo valor.
+          \begin{center}
+                  \includegraphics[width=\textwidth]{images/phSurfaceBottomBar}
+            \end{center}
+            \tab En cuanto a la ubicación geográfica, veremos una ubicación de los barrios muy variada:
+            \begin{center}
+                  \includegraphics[width=\textwidth]{images/phSurfaceBottomMap}
+            \end{center}
+            \tab Desde Saavedra y Parque Chacabuco en CABA, hasta dos barrios alejados como Beccar en Zona Norte y Quilmes
+            en Zona Sur.
+        \subsubsection{Departamentos}
+          El \emph{Bottom 5} de los departamentos está conformado por:
+          \begin{center}
+            \begin{tabular}{ |c|c|c| }
+              \hline
+              \multicolumn{3}{|c|}{Superficie promedio de los departamentos por barrio}\\
+              \hline
+              \hline
+              Puesto & Barrio & Superficie [$m^2$]\\
+              \hline
+              5 & Munro & 50\\
+              4 & Villa Luzuriaga & 48\\
+              3 & Morón & 48\\
+              2 & Parque Chas & 46\\
+              1 & Boedo & 40\\
+              \hline
+            \end{tabular}
+          \end{center}
+          \tab La superficie promedio para estos departamentos es de aproximadamente la mitad de los PHs más pequeños
+          y tienen un promedio menor al $30\%$ de los departamentos más grandes. Aquí encontramos nuevamente a Munro, que
+          también se encuentra en el \emph{Bottom 5} de las casas. \\
+          \tab Aquí, nuevamente, un gráfico de barras nos dará cinco barras muy similares, con Villa Luzuriaga y Morón
+          compartiendo el mismo valor y una diferencia entre el primero y el quinto de sólo  $10m^2$.
+          \begin{center}
+                  \includegraphics[width=\textwidth]{images/apartmentSurfaceBottomBar}
+            \end{center}
+            \tab En cuanto a la ubicación geográfica, si observamos el siguiente mapa:
+            \begin{center}
+                  \includegraphics[width=\textwidth]{images/apartmentSurfaceBottomMap}
+            \end{center}
+            \tab Podemos ver que no hay una tendencia particular, pues encontramos barrios dentro de Capital Federal, en la
+            Zona Norte y en la Zona Oeste, siendo dos los barrios de la última y dos los de la primera.
+        \subsubsection{Locales}
+          Finalmente, para los locales, el \emph{Bottom 5} es el siguiente:
+          \begin{center}
+            \begin{tabular}{ |c|c|c| }
+              \hline
+              \multicolumn{3}{|c|}{Superficie promedio de los locales por barrio}\\
+              \hline
+              \hline
+              Puesto & Barrio & Superficie [$m^2$]\\
+              \hline
+              5 & Palermo & 145\\
+              4 & Ramos Mejía & 125\\
+              3 & Villa Crespo & 120\\
+              2 & Barrio Norte & 119\\
+              1 & Belgrano & 92\\
+              \hline
+            \end{tabular}
+          \end{center}
+          \tab Esta tabla nos permite ver que entre los integrantes del \emph{Bottom 5} y los del \emph{Top 5} hay una
+          variación del $42\%$, que es la más pequeña entre todos los tipos. \\
+          \tab El hecho de que Belgrano sea el más pequeño se lo atribuímos a la cantidad de locales que se pueden
+          encontrar en dicho barrio tanto en avenidas como Cabildo o en galerías comerciales en esa misma avenida, en donde
+          se encuentran muchísimos locales muy pequeños uno al lado del otro.
+          \tab En este caso, el gráfico de barras si mostrará una variación importante, pues Belgrano tiene una
+          superficie promedio que representa el $63\%$ de la de Palermo.
+          \begin{center}
+                  \includegraphics[width=\textwidth]{images/storeSurfaceBottomBar}
+            \end{center}
+            \tab Finalmente, si analizamos la ubicación geográfica de estos barrios, vemos lo siguiente:
+            \begin{center}
+                  \includegraphics[width=\textwidth]{images/storeSurfaceBottomMap}
+            \end{center}
+            \tab La mayoría de los barrios se encuentran en una zona casi continua del Centro-Norte de Capital Federal con
+            la excepcion de Ramos Mejía en Zona Oeste. \\
+            \tab Se puede observar, si se compara con el \emph{Top 5}, se puede ver que los barrios en este último se
+            encuentran 'de Recoleta para el Sur' y en el caso actual se encuentran 'de Recoleta para el Norte'.
+
 		\section{Tipos de propiedades y sus precios}
 			\subsection{¿Dónde están las propiedades más caras según su tipo?}
 				El objetivo de esta sección es analizar donde se ubican las propiedades mas caras, dependiendo del tipo que sean. \\
 				Vale destacar, que para realizar el análisis próximo a presentarse, primero se filtro por tipo de propiedad y luego se agrupo por barrio, dejando el promedio y la cantidad de entradas como valor. Para todos los casos a presentarse a continuación, se filtro con un mínimo de entradas igual a 20.
-				 			
+
 				\subsubsection{Casas}
 				Para el caso particular de las casas, se realizo un \emph{TOP 5} obteniendo los siguientes resultados:
-				
+
 					\begin{center}
 						\begin{tabular}{ |c|c| }
 							\hline
@@ -371,25 +371,25 @@
 							\hline
 						\end{tabular}
 					\end{center}
-				
+
 				Se puede observar en la tabla, que la diferencia entre los primeros 2 barrios es muy pequeña, pero aumenta a mas de 1000 Usd con los últimos 3 de la tabla.
-				
+
 				\begin{center}
    		    				\includegraphics[width=\textwidth]{images/topCc}
 				\end{center}
-				
+
 				Finalmente, se añade la ubicación de dichas casas:
-				
+
 				\begin{center}
    		    				\includegraphics[width=\textwidth]{images/ubicCc}
 				\end{center}
- 
-				Entonces se puede notar que las casas mas caras, como se analizo en el capitulo anterior, se encuentran en las zonas donde tanto el precio por metro cuadrado, como el precio aproximado de las viviendas es mas elevado, salvo por el Barrio Santa Barbara. Este último, es un barrio cerrado ubicado en Benavidez. 
+
+				Entonces se puede notar que las casas mas caras, como se analizo en el capitulo anterior, se encuentran en las zonas donde tanto el precio por metro cuadrado, como el precio aproximado de las viviendas es mas elevado, salvo por el Barrio Santa Barbara. Este último, es un barrio cerrado ubicado en Benavidez.
 
 
 				\subsubsection{PHs}
 				Para los PHs el \emph{TOP 5}, entrego los siguientes resultados:
-				
+
 					\begin{center}
 						\begin{tabular}{ |c|c| }
 							\hline
@@ -406,23 +406,23 @@
 							\hline
 						\end{tabular}
 					\end{center}
-				
+
 				\begin{center}
    		    				\includegraphics[width=\textwidth]{images/topPHc}
 				\end{center}
-				
-				Tal como se puede ver en el gráfico y en la tabla, la mayor diferencia se presenta entre el primero y el segundo, siendo esta de 172 Usd.\\				
+
+				Tal como se puede ver en el gráfico y en la tabla, la mayor diferencia se presenta entre el primero y el segundo, siendo esta de 172 Usd.\\
 				Finalmente, se añade la ubicación de dichos PH:
-				
+
 				\begin{center}
    		    				\includegraphics[width=\textwidth]{images/ubicPHc}
-				\end{center}	
-				
+				\end{center}
+
 				Si bien los datos son consistentes respecto con el análisis hecho en el capitulo anterior, uno esperaría que la mayor cantidad de PHs se ubicara en GBA. Como podemos ver, esta hipótesis no es valida.
-				
+
 				\subsubsection{Departamentos}
 				Para los Departamentos el \emph{TOP 5}, arrojo los siguientes resultados:
-				
+
 					\begin{center}
 						\begin{tabular}{ |c|c| }
 							\hline
@@ -439,24 +439,24 @@
 							\hline
 						\end{tabular}
 					\end{center}
-				
+
 				\begin{center}
    		    				\includegraphics[width=\textwidth]{images/topDc}
 				\end{center}
-				
-				Se puede observar claramente en el gráfico que, hay una diferencia muy abrupta entre las primeras 3 ubicaciones, estabilizándose hacia el final de la tabla.\\				
+
+				Se puede observar claramente en el gráfico que, hay una diferencia muy abrupta entre las primeras 3 ubicaciones, estabilizándose hacia el final de la tabla.\\
 				Finalmente, se añade la ubicación de dichos Departamentos:
-				
+
 				\begin{center}
    		    				\includegraphics[width=\textwidth]{images/ubicDc}
-				\end{center}	
-				
+				\end{center}
+
 				Como se puede observar en el gráfico anterior, se tiene la mayor cantidad departamentos con precio elevado en CABA. También hay que notar, que los departamentos que están en GBA se encuentran en barrios cercanos a CABA.
-				
+
 				\subsubsection{Locales}
-				
+
 					Para los Locales se obtuvieron los siguientes resultados del \emph{TOP 5}:
-				
+
 					\begin{center}
 						\begin{tabular}{ |c|c| }
 							\hline
@@ -473,29 +473,29 @@
 							\hline
 						\end{tabular}
 					\end{center}
-				
+
 				\begin{center}
    		    				\includegraphics[width=\textwidth]{images/topLc}
 				\end{center}
-				
-				Se puede ver en la tabla y el gráfico, que la mayor diferencia se presenta entre los primeros 2 y los últimos 3.\\				
+
+				Se puede ver en la tabla y el gráfico, que la mayor diferencia se presenta entre los primeros 2 y los últimos 3.\\
 				Finalmente, se añade la ubicación de los Locales mas caros:
-				
+
 				\begin{center}
    		    				\includegraphics[width=\textwidth]{images/ubicLc}
-				\end{center}	
-				
+				\end{center}
+
 				Como se puede observar en el gráfico anterior, los locales mas caros se concentran en CABA, salvo por los últimos 2 datos de la tabla.
-				
-				
+
+
 			\subsection{¿Dónde están las propiedades más baratas según su tipo?}
 				En esta sección se propone analizar donde se ubican las propiedades mas baratas. \\
 				En dicha sección se realizaron los mismos filtrados que para las propiedades mas caras.
-				 							
+
 				\subsubsection{Casas}
-				
+
 				Se realizo un \emph{TOP 5} obteniendo los siguientes resultados para las casas:
-				
+
 					\begin{center}
 						\begin{tabular}{ |c|c| }
 							\hline
@@ -512,25 +512,25 @@
 							\hline
 						\end{tabular}
 					\end{center}
-				
-				
+
+
 				\begin{center}
    		    				\includegraphics[width=\textwidth]{images/topCb}
 				\end{center}
-				
+
 				Se puede observar, que la diferencia entre los distintos barrios es muy pequeña. Dicha diferencia, no supera los 60 Usd entre el primero y el último.
 				Finalmente, se añade la ubicación de dichas casas:
-				
+
 				\begin{center}
    		    				\includegraphics[width=\textwidth]{images/ubicCb}
 				\end{center}
- 
+
 				Se puede notar, que las casas con menores precios se ubican en GBA, lo cual era esperable, ya que concuerda con el análisis de precio por metro cuadrado y de precio aproximado.
-				
+
 				\subsubsection{PHs}
-				
+
 					Para los PHs el se obtuvieron los siguientes resultados del \emph{TOP 5}:
-				
+
 					\begin{center}
 						\begin{tabular}{ |c|c| }
 							\hline
@@ -541,30 +541,30 @@
 							\hline
 							Villa Bosch & 1157.563280 \\
 							Lanús Oeste & 1109.922068 \\
-							El Palomar & 1103.662526 \\														
+							El Palomar & 1103.662526 \\
 							Ituzaingó & 1021.952671 \\
 							San Martín & 947.012756 \\
 
 							\hline
 						\end{tabular}
 					\end{center}
-				
+
 				\begin{center}
    		    				\includegraphics[width=\textwidth]{images/topPHb}
 				\end{center}
-				
+
 				Se puede observar que se obtienen diferencias muy cercanas entre las distintas zonas, salvo entre la segunda y tercera donde la diferencia es mucho menor al resto de la tabla.
-				
+
 				\begin{center}
    		    				\includegraphics[width=\textwidth]{images/ubicPHb}
-				\end{center}	
-				
+				\end{center}
+
 				Como se puede ver en este gráfico, los resultados son totalmente esperables, ya que los PHs con menor precio se encuentran ubicados en \code{CABA}
-				
+
 				\subsubsection{Departamentos}
-				
+
 					Para los Departamentos el \emph{TOP 5}, entrego los siguientes resultados:
-				
+
 					\begin{center}
 						\begin{tabular}{ |c|c| }
 							\hline
@@ -580,25 +580,25 @@
 							José C Paz & 1057.673806 \\
 						\end{tabular}
 					\end{center}
-				
-				
+
+
 				\begin{center}
    		    				\includegraphics[width=\textwidth]{images/topDb}
 				\end{center}
-				
-				Se puede apreciar que las diferencias entre los barrios de la tabla, son muy parecidas entre sí.\\		
+
+				Se puede apreciar que las diferencias entre los barrios de la tabla, son muy parecidas entre sí.\\
 				Finalmente, se añade la ubicación de dichos Departamentos:
-				
+
 				\begin{center}
    		    				\includegraphics[width=\textwidth]{images/ubicDb}
-				\end{center}	
-				
+				\end{center}
+
 				Se puede observar en el gráfico, que los departamentos con menores precios están ubicados únicamente en GBA. Lo cual es esperable, debido al análisis realizado en el capitulo anterior y lo obtenido con los departamentos mas caros.
-				
+
 				\subsubsection{Locales}
-				
+
 					Para los Locales el \emph{TOP 5} lanzo los siguientes resultados:
-				
+
 					\begin{center}
 						\begin{tabular}{ |c|c| }
 							\hline
@@ -615,26 +615,26 @@
 							\hline
 						\end{tabular}
 					\end{center}
-				
+
 				\begin{center}
    		    				\includegraphics[width=\textwidth]{images/topLb}
 				\end{center}
-				
-				Se puede ver que la mayor diferencia de precios entre las distintas localidades, se da entre las últimas 2 de la tabla, siendo las diferencias del resto muy similares.\\				
+
+				Se puede ver que la mayor diferencia de precios entre las distintas localidades, se da entre las últimas 2 de la tabla, siendo las diferencias del resto muy similares.\\
 				Finalmente, se añade la ubicación de los Locales mas baratos:
-				
+
 				\begin{center}
    		    				\includegraphics[width=\textwidth]{images/ubicLb}
-				\end{center}	
-				
+				\end{center}
+
 				Como era de esperar, los Locales mas baratos se encuentran ubicados en la zona de CABA.
-				
-		
+
+
 		\section{Tipos de propiedades y sus ubicaciones}
 			\subsection{¿En qué lugar hay más propiedades de cada tipo?}
 				En esta sección se pretende analizar, las localidades que tienen mayor cantidad de propiedades de cada tipo.\\
 				Vale aclarar que cada tipo de propiedad, fue filtrada por el siguiente rango de precios:
-				
+
 				\begin{center}
 						\begin{tabular}{ |c|c|c| }
 							\hline
@@ -650,12 +650,12 @@
 							\hline
 						\end{tabular}
 					\end{center}
-				Por ultimo, también se pidió un mínimo de 20 entradas.	
-			
+				Por ultimo, también se pidió un mínimo de 20 entradas.
+
 				\subsubsection{Casas}
-				
+
 				Aquí se analizara el resultado que se obtuvo a partir del \emph{TOP 5} de los barrios donde hay mas casas:
-				
+
 				\begin{center}
 						\begin{tabular}{ |c|c| }
 							\hline
@@ -664,23 +664,27 @@
 							\hline
 							Barrio & Cantidad\\
 							\hline
-							completar tabla & no estan los datos\\
+							Tigre & 1657.0 \\ 
+							Benavidez & 1237.0 \\
+							Pilar & 1219.0 \\ 
+							Capital Federal & 921.0 \\
+							Escobar & 700.0 \\
 							\hline
 						\end{tabular}
 					\end{center}
-				
+
 				Además se agrega un gráfico con las ubicaciones de dichas casas:
-				
+
 				\begin{center}
    		    				\includegraphics[width=\textwidth]{images/ubicMasCasas}
 				\end{center}
-				
+
 				Como se puede observar, la ubicación de los barrios con mas casas, esta prácticamente centralizada en CABA. Lo que uno esperaba, es que se hubiese centralizado sobre GBA, por el nivel de urbanización de CABA. Se ve con los gráficos y tablas, que esta hipótesis no es correcta.
-				
+
 				\subsubsection{PHs}
-				
+
 				El objetivo de esta sección es analizar los barrios con mayor cantidad de PHs. Se vera a continuación una tabla del top 5:
-				
+
 				\begin{center}
 						\begin{tabular}{ |c|c| }
 							\hline
@@ -697,18 +701,18 @@
 							\hline
 						\end{tabular}
 					\end{center}
-				
+
 				Ahora se pasara a presentar un gráfico con las ubicaciones de los barrios con mayor cantidad de PHs:
 				\begin{center}
    		    				\includegraphics[width=\textwidth]{images/ubicMPH}
 				\end{center}
-				
+
 				Como se puede observar, los barrios con mayor cantidades de PHs, estan divididos entre CABA y Zona Oeste.
-				
+
 				\subsubsection{Departamentos}
-				
+
 				Dicha sección se presenta con el objetivo de analizar cuales son los barrios que tienen mayor cantidad de departamentos:
-				
+
 				\begin{center}
 						\begin{tabular}{ |c|c| }
 							\hline
@@ -725,19 +729,19 @@
 							\hline
 						\end{tabular}
 					\end{center}
-				
+
 				A continuación se presentara un gráfico con las ubicaciones de dichos datos:
-				
+
 				\begin{center}
    		    				\includegraphics[width=\textwidth]{images/ubicMDeptos}
 				\end{center}
-				
+
 				Como se puede ver, dicho gráfico esta centralizado en CABA y en Zona Norte, mas precisamente Tigre. La centralización que se da en CABA es totalmente esperable, por el nivel de urbanización de dichos lugares. De todas formas, uno esperaría que este todo centralizado en CABA, y como se puede ver no es de tal forma.
-				
+
 				\subsubsection{Locales}
-				
+
 				Esta sección se presenta con el objetivo de hacer un análisis similar a los anteriores, para los Locales:
-				
+
 				\begin{center}
 						\begin{tabular}{ |c|c| }
 							\hline
@@ -754,29 +758,30 @@
 							\hline
 						\end{tabular}
 					\end{center}
-				
+
 				Ahora se presenta un gráfico con las ubicaciones:
-				
+
 				\begin{center}
    		    				\includegraphics[width=\textwidth]{images/ubicMLocales}
 				\end{center}
-				
+
 				Como se puede observar, dicho gráfico presenta centralización en la zona de CABA.
 				Esto es totalmente esperable, ya que los locales se encuentran cerca de muchos espacios verdes, o zonas donde se concentran las redes de transporte.
-		
+
 		\section{Variación del precio total a través de los años}
 			%Al igual que en el análisis global de las propiedades, se presentaran gráficos que representan los promedios
 %mensuales de las propiedades de tipo casa para cada año. En los siguientes gráficos, al igual que en el análisis
 %global, el eje x representa los meses de cada año, y el eje y representa el precio de las propiedades en usd. Dicho
-%precio varia entre 0−600000 usd.			
-			
+%precio varia entre 0−600000 usd.
+
 			Esta sección tiene el objetivo de realizar un análisis de como variaron los precios de cada tipo de propiedad a lo largo de los años.\\
 			Vale aclarar, que el año 2013 no se tuvo en cuenta ya que al dividir por tipos de propiedades quedaban muy pocas entradas de cada tipo.
 			Por último, se aclara que los precios fueron recortados según la tabla de la sección anterior.
-			
+
 			\subsection{Casas}
-			
-			Aquí se pretende analizar la variación de los precios promedios de las casas entre los años 2014-2017. Con este fin, se presentan los siguientes gráficos:	
+
+			Aquí se pretende analizar la variación de los precios promedios de las casas entre los años 2014-2017. Con este fin, se presentaran gráficos que representan los promedios mensuales de las propiedades de tipo casa para cada año. En los siguientes gráficos, el eje x representa los meses de cada año, y el eje y representa el precio de las propiedades en usd. Dicho
+precio varia entre 0 y 600000 usd.
 
 			\begin{center}
    		    		\includegraphics[width=\textwidth]{images/vCasa2014}
@@ -784,25 +789,90 @@
 
 			\begin{center}
    		    		\includegraphics[width=\textwidth]{images/vCasa2015}
-			\end{center}			
-			
+			\end{center}
+
 			\begin{center}
    		    		\includegraphics[width=\textwidth]{images/vCasa2016}
-			\end{center}			
-			
+			\end{center}
+
 			\begin{center}
    		    		\includegraphics[width=\textwidth]{images/vCasa2017}
 			\end{center}
-			
+
 			Como se puede observar, los gráficos promedios de la variación de precio de las casas siguen 				una tendencia similar a la analizada globalmente, en la sección 1. Algo importante a destacar, 				es el cambio brusco de los precios entre los meses Febrero-Marzo del año 2015. Al igual que en 				el análisis global, estos son los meses con menores y mayores precios de casas vendidas del año 			2015 respectivamente. Entonces se atribuye esta fluctuación a las casas, ya que como se vera 				mas adelante, no se presenta en el resto de las propiedades.
 			\\
 			Por ultimo se puede ver que el año 2016, fue un año muy estable con respecto a los precios 					promedios de las casas. Se ve en dicho gráfico que se establece una media que varia entre 350 y 			400 mil usd, a partir de la cual la fluctuación de ese año es muy pequeña.
 
 			\subsection{PHs}
+
+
+			Esta sección tiene el objetivo de analizar la variación de los precios promedios de los PH en el periodo que comprende los años 2014-2017. Para obtener una mirada generalizada de dicho periodo, se presentaran gráficos que representan los promedios mensuales de los PHs, al igual que en el caso anterior con las casas. En los gráficos a presentarse a continuación, los ejes poseen el mismo significado que en el caso anterior, con un maxímo para el eje y de 300000 usd.
+
+			\begin{center}
+   		    		\includegraphics[width=\textwidth]{images/vPH2014}
+			\end{center}
+
+			\begin{center}
+   		    		\includegraphics[width=\textwidth]{images/vPH2015}
+			\end{center}
+
+			\begin{center}
+   		    		\includegraphics[width=\textwidth]{images/vPH2016}
+			\end{center}
+
+			\begin{center}
+   		    		\includegraphics[width=\textwidth]{images/vPH2017}
+			\end{center}
+
+			Como se puede notar, en los primeros 2 años los gráficos promedios poseen una notoria variación de los precios. Se puede ver que en el mes de Marzo de 2014, no se tienen entradas, y que la variación entre Enero-Junio los precios fue muy grande. Como se menciono en el análisis global, eso no quiere decir que hayan aumentado o disminuido los precios, sino que puede deberse a la venta de ciertas propiedades que influyen considerablemente sobre los precios.
+			\\
+			Siguiendo con el análisis, se puede notar que en los últimos 2 años se establecen medias al rededor de las cuales los precios varían muy poco.
+
+
 			\subsection{Departamentos}
+
+			La sección que esta siendo presentada, viene a analizar la variación de los precios promedios de los Departamentos entre los años 2014-2017. Ahora se pasara a presentar los gráficos que representan los promedios mensuales de los Departamentos. En los gráficos a que se presentaran próximamente, los ejes poseen el mismo significado que en el caso anterior, con un maxímo para el eje y de 200000 usd.
+
+			\begin{center}
+   		    		\includegraphics[width=\textwidth]{images/vDepto2014}
+			\end{center}
+
+			\begin{center}
+   		    		\includegraphics[width=\textwidth]{images/vDepto2015}
+			\end{center}
+
+			\begin{center}
+   		    		\includegraphics[width=\textwidth]{images/vDepto2016}
+			\end{center}
+
+			\begin{center}
+   		    		\includegraphics[width=\textwidth]{images/vDepto2017}
+			\end{center}
+
+			Se puede observar que salvo en el 2014, los precios promedios de los departamentos fueron muy estables. En estos últimos 3 años, se establecen medias de aproximadamente 130 mil usd, 140 mil usd y 160 mil usd para los años 2015, 2016 y 2017 respectivamente. A partir de estas medias, los precios promedios de los departamentos sufren una leve variación mes a mes.
+
 			\subsection{Locales}
-		
-		
+
+			Esta sección, tiene el objetivo de analizar la variación de los precios promedios de los Locales en el período 2014-2017. Como en las secciones anteriores, se presentaran gráficos que representan el precio promedio mensual. Dichos gráficos, poseen una variación de eje y entre
+
+			\begin{center}
+   		    		\includegraphics[width=\textwidth]{images/vLoc2014}
+			\end{center}
+
+			\begin{center}
+   		    		\includegraphics[width=\textwidth]{images/vLoc2015}
+			\end{center}
+
+			\begin{center}
+   		    		\includegraphics[width=\textwidth]{images/vLoc2016}
+			\end{center}
+
+			\begin{center}
+   		    		\includegraphics[width=\textwidth]{images/vLoc2017}
+			\end{center}
+
+			Como se puede observar en los gráficos anteriores los precios promedio de los locales son muy variables para todos los años. Lo primero a tener en cuenta es que en el año 2014, hubo meses en los que no hubo ninguna entrada, pese a esto se puede verificar que en el año 2014 hubo una severa variación de los precios. En el año 2015 se destacan los meses Marzo, Junio, Julio, Noviembre y Diciembre como los meses donde los precios de los locales eran superiores al resto de los meses. Se puede observar que los meses recientemente mencionados alcanzan picos similares de precios, y que el resto de los meses poseen promedios similares entre sí. Por otro lado, se puede visualizar que en el año 2016 se tiene dos notables tendencias crecientes: la primera se puede ver entre los meses de Enero a Mayo, con una disminución de los precios entre este ultimo y Junio, donde comienza una segunda tendencia creciente exceptuando el mes de septiembre. Finalmente en el año 2017, se poseen abruptas variaciones de los precios promedio de los locales. Podemos destacar entre sus máximos, los meses de Marzo y Julio.
+
 		\section{Variación del precio por $m^2$ a través de los años}
 			En esta sección, el objetivo es analizar la variación del precio por $m^2$ de cada uno de los tipos de propiedad
 			disponibles. Se espera que, en todos los casos, la variación sea creciente alcanzando su máximo en 2017. De todas formas,
@@ -863,7 +933,7 @@
 				dos años, un leve descenso entre 2015 y 2016 y finalmente un nuevo aumento importante. \\
 				\tab Consideramos que la magnitud de esta variación se puede deber a dos cosas; la primera es que efectivamente los
 				precios por $m^2$ de los locales haya aumentado de esta manera y la segunda es que los numeros obtenidos se deban
-				a la poca cantidad de entradas que se poseen de los primeros tres años. De todas maneras, reforzando la primer 
+				a la poca cantidad de entradas que se poseen de los primeros tres años. De todas maneras, reforzando la primer
 				opción, el año 2016 y 2017 poseen una cantidad de entradas muy similar y el cambio es de unos $3000$USD.
 				\begin{center}
    		    			\includegraphics[width=\textwidth]{images/storeVariation}
@@ -877,7 +947,7 @@
 				Por otro lado, los locales destacan por su bajo comienzo (casi último) y su alto final (primero con más de $3000$USD
 				de diferencia). \\
 				\tab Podemos concluír, entonces, notando que la relación de precios se mantuvo con el pasar de los años, manteniendo
-				el orden de los precios. Es decir, los departamentos son los más caros, seguidos por los PHs y terminando con 
+				el orden de los precios. Es decir, los departamentos son los más caros, seguidos por los PHs y terminando con
 				las casas pero con precios cada vez mayores, como se esperaba.
-		
+
 \end{document}
